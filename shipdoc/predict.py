@@ -19,7 +19,7 @@ from shipdoc.pages import ROOT, documents
 from shipdoc.postprocess import normalise
 from shipdoc.schema import errors
 
-MAX_TOKENS = {"classify": 5, "invoice": 4096, "waybill": 600}
+MAX_TOKENS = {"classify": 5, "invoice": 8192, "waybill": 600}  # 4096 truncated 2 of 200 test invoices
 PROMPT_HASH = hashlib.sha1((prompts.CLASSIFY + prompts.INVOICE + prompts.WAYBILL).encode()).hexdigest()[:8]
 
 

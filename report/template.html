@@ -47,6 +47,7 @@ pre { font: 7.8pt Menlo, monospace; margin: 3px 0; background: #f7f7f7; padding:
 <ul>
 <li>I looked at all 18 train suppliers while analysing the data, and the column-role prompt and its three fixes were written after reading bake-off errors (fold-4 docs excluded). Dev numbers are therefore optimistic. The fold-4 row is the cleanest unseen estimate, but it has only {{F4N}} docs.</li>
 <li>Throughput on the Mac: {{THROUGHPUT}}. The transformers backend (<code>--backend hf</code>) for graders without a Mac is implemented but was not run.</li>
+<li>Two test invoices (30 rows each) hit the 4,096-token output limit, and one came out empty. The limit was raised to 8,192 and only those two were re-run. No dev doc reached the old limit, so the dev numbers are unaffected.</li>
 <li>Cut for time: a faster prompt (v2, compact output) that turned out slower and was not used; scan upscaling; a second OCR tier for high-precision flags.</li>
 </ul>
 </body></html>

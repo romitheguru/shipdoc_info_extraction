@@ -53,17 +53,17 @@ Runs locally with MLX on the M5 Pro (24 GB unified memory, shared with the OS). 
 ### Phase C: evaluate honestly
 | # | Unit | Done when | Effort |
 |---|---|---|---|
-| C1 🔶 dev run (no train run: nothing is trained, fold 4 of dev is the unseen slice) | Full dev run and all 500 docs for the folds; slice tables (scanned, multi-page, repeated parts, illegible, seen/unseen) | Numbers from `eval.evaluate` for dev, fold 4 and the 5-fold mean | 0.5 h work + ~2.5 h unattended Mac run |
-| C2 🔶 analysis only, no further fix round (frozen) | Error analysis by slice; one round of fixes that generalise (driven by errors outside fold 4 only) | Note 12 with failure modes and before/after | 1 h |
-| C3 🔶 from the run caches | Throughput on the Mac: s/doc p50/p95, docs/hour, peak memory, and what that means for the assumed volume (note 10) | A row in note 12 and the report | 0.25 h |
+| C1 ✅ dev run (no train run: nothing is trained, fold 4 of dev is the unseen slice) | Full dev run and all 500 docs for the folds; slice tables (scanned, multi-page, repeated parts, illegible, seen/unseen) | Numbers from `eval.evaluate` for dev, fold 4 and the 5-fold mean | 0.5 h work + ~2.5 h unattended Mac run |
+| C2 ✅ analysis only, no further fix round (frozen) | Error analysis by slice; one round of fixes that generalise (driven by errors outside fold 4 only) | Note 12 with failure modes and before/after | 1 h |
+| C3 ✅ from the run caches | Throughput on the Mac: s/doc p50/p95, docs/hour, peak memory, and what that means for the assumed volume (note 10) | A row in note 12 and the report | 0.25 h |
 
 ### Phase D: ship
 | # | Unit | Done when | Effort |
 |---|---|---|---|
-| D1 🔶 running | Test run on the Mac | `test_predictions.json` has 200 docs and passes the schema check | 0.25 h work + ~1 h unattended |
-| D2 🔶 README + scripts done | Reproducibility: README with end-to-end commands for both backends, pinned model revisions, seeds, `uv.lock`; first commits | A fresh clone reproduces dev numbers | 0.5 h |
+| D1 ✅ 200 docs, schema-valid | Test run on the Mac | `test_predictions.json` has 200 docs and passes the schema check | 0.25 h work + ~1 h unattended |
+| D2 ✅ README + scripts; local commits | Reproducibility: README with end-to-end commands for both backends, pinned model revisions, seeds, `uv.lock`; first commits | A fresh clone reproduces dev numbers | 0.5 h |
 | D3 | Public GitHub repo (confirm with the author before publishing) | Repo URL works | 0.1 h |
-| D4 🔶 builder done, numbers pending | `report.pdf`, 2 pages max: approach, slice results, failure modes, new-layout handling, review-flag precision/recall, throughput, links | PDF ≤ 2 pages with all links | 1 h |
+| D4 ✅ 2 pages; repo link pending D3 | `report.pdf`, 2 pages max: approach, slice results, failure modes, new-layout handling, review-flag precision/recall, throughput, links | PDF ≤ 2 pages with all links | 1 h |
 
 **Remaining effort:** about 12 h of hands-on work (A ~2.75 h, B ~4 h, C ~1.75 h, D ~2 h) plus ~4–5 h of unattended model runs. Together with steps 0–2 this is well over the brief's suggested 6–8 h; A2–A3 and B5 are the first to cut if time runs short (fall back to 8B 8-bit + the PP-OCRv5 flag from note 09).
 

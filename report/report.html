@@ -28,10 +28,25 @@ pre { font: 7.8pt Menlo, monospace; margin: 3px 0; background: #f7f7f7; padding:
 </ul>
 
 <h2>2. Dev results (100 docs; official scorer, identical numbers from <code>eval.evaluate</code>)</h2>
-<table><tr><th>slice</th><th>docs</th><th>OVERALL</th><th>header %</th><th>row F1</th><th>docs exact %</th><th>false fills</th></tr><tr><td>all</td><td>40</td><td><b>91.0</b></td><td>100.0</td><td>92.5</td><td>70.0</td><td>0/15</td></tr><tr><td>scanned</td><td>22</td><td><b>89.6</b></td><td>100.0</td><td>92.1</td><td>63.6</td><td>0/9</td></tr><tr><td>digital</td><td>18</td><td><b>92.7</b></td><td>100.0</td><td>92.9</td><td>77.8</td><td>0/6</td></tr><tr><td>multi-page</td><td>13</td><td><b>82.9</b></td><td>100.0</td><td>91.9</td><td>30.8</td><td>0/5</td></tr><tr><td>repeated parts</td><td>10</td><td><b>86.9</b></td><td>100.0</td><td>87.2</td><td>60.0</td><td>0/1</td></tr><tr><td>illegible field</td><td>6</td><td><b>88.4</b></td><td>100.0</td><td>87.8</td><td>66.7</td><td>0/8</td></tr><tr><td>waybills</td><td>8</td><td><b>100.0</b></td><td>100.0</td><td>–</td><td>100.0</td><td>0/1</td></tr><tr><td>invoices</td><td>32</td><td><b>89.5</b></td><td>100.0</td><td>92.5</td><td>62.5</td><td>0/14</td></tr><tr><td><b>unseen</b>: fold 4, clean (no prompt change from these)</td><td>8</td><td><b>84.8</b></td><td>100.0</td><td>87.1</td><td>50.0</td><td>0/5</td></tr><tr><td>seen: other folds (prompt iterated on errors here)</td><td>32</td><td><b>92.9</b></td><td>100.0</td><td>94.8</td><td>75.0</td><td>0/10</td></tr></table>
+<table><tr><th>slice</th><th>docs</th><th>OVERALL</th><th>header %</th><th>row F1</th><th>docs exact %</th><th>false fills</th></tr><tr><td>all</td><td>100</td><td><b>92.5</b></td><td>99.9</td><td>94.0</td><td>75.0</td><td>1/34</td></tr><tr><td>scanned</td><td>43</td><td><b>91.7</b></td><td>100.0</td><td>92.2</td><td>74.4</td><td>0/12</td></tr><tr><td>digital</td><td>57</td><td><b>93.0</b></td><td>99.8</td><td>95.1</td><td>75.4</td><td>1/22</td></tr><tr><td>multi-page</td><td>28</td><td><b>83.9</b></td><td>100.0</td><td>93.6</td><td>32.1</td><td>0/9</td></tr><tr><td>repeated parts</td><td>17</td><td><b>89.9</b></td><td>100.0</td><td>89.5</td><td>70.6</td><td>0/5</td></tr><tr><td>illegible field</td><td>8</td><td><b>87.5</b></td><td>98.4</td><td>89.1</td><td>62.5</td><td>1/12</td></tr><tr><td>waybills</td><td>23</td><td><b>100.0</b></td><td>100.0</td><td>–</td><td>100.0</td><td>0/4</td></tr><tr><td>invoices</td><td>77</td><td><b>91.0</b></td><td>99.8</td><td>94.0</td><td>67.5</td><td>1/30</td></tr><tr><td><b>unseen</b>: fold 4, clean (no prompt change from these)</td><td>22</td><td><b>87.1</b></td><td>100.0</td><td>90.6</td><td>54.5</td><td>0/10</td></tr><tr><td>seen: other folds (prompt iterated on errors here)</td><td>78</td><td><b>94.3</b></td><td>99.8</td><td>95.5</td><td>80.8</td><td>1/24</td></tr></table>
 
 <h2>3. Failure modes</h2>
-<p>(pending)</p>
+<p>25 of 100 dev docs are not fully correct. Header fields are 99.9% right, and each header error is a false fill, so almost all lost points are <b>rows</b>: 55 of 924 predicted rows are wrong, and each wrong row has exactly one wrong field.</p>
+<table>
+<tr><th>failure mode</th><th>rows</th><th>docs</th><th>example (predicted → gold)</th><th>doc flagged?</th></tr>
+<tr><td><b>Lookalike characters</b> in part numbers: S→8/5, O↔0, Z→2, I↔1/L, P→F</td><td>38</td><td>18</td><td><code>NGTT-1750-86</code> → <code>…-S6</code>, <code>LH-25860-120U</code> → <code>…12OU</code></td><td>16 of 18</td></tr>
+<tr><td><b>Systematic prefix misread</b> on one digital invoice (<code>PO</code> read as <code>P0</code>, fold 4)</td><td>9</td><td>1</td><td><code>P04503319053</code> → <code>PO4503319053</code></td><td>yes</td></tr>
+<tr><td><b>Dropped, added or garbled characters</b>, incl. one Cyrillic <code>М</code> emitted for Latin M</td><td>7</td><td>6</td><td><code>GHSR20581W</code> → <code>GHSR2058I1W</code></td><td>6 of 6</td></tr>
+<tr><td><b>Missing cell</b> (quantity read as null)</td><td>1</td><td>1</td><td>dev_0093</td><td>no</td></tr>
+<tr><td><b>False fill</b>: a scribbled-out date was read as a date</td><td>1 field</td><td>1</td><td>dev_0084: 2024-09-24 for an illegible date</td><td>yes (date not found by the second reader)</td></tr>
+</table>
+<ul>
+<li><b>Column meaning is solved on dev:</b> 0 column swaps. The 2 swaps in the original bake-off prompt (35 rows) are fixed by the column-role prompt and the two generic repairs.</li>
+<li><b>Unseen vs seen.</b> Fold 4 scores 87.1 against 94.3 for the other folds. The gap is character reading, not layout: fold 4's part-number styles (<code>GLT/…/S5S</code>, <code>OVVX…S</code>, <code>JI-…0OFN</code>) are dense with S/5/8 and O/0, and it contains the <code>P0</code> invoice. No fold-4 doc has a column or header error.</li>
+<li><b>Multi-page docs</b> score lowest on exactness (32% fully correct): they have the most rows, so one lookalike anywhere fails the document. Their row F1 (93.6) is close to the average.</li>
+<li><b>Cheap next fixes</b> (not applied, config frozen): map non-Latin homoglyphs to Latin, then re-read flagged part numbers as crops at 2× resolution with the same model. Both are generic.</li>
+</ul>
+
 
 <h2>4. A new supplier layout</h2>
 <ul>
@@ -41,14 +56,15 @@ pre { font: 7.8pt Menlo, monospace; margin: 3px 0; background: #f7f7f7; padding:
 </ul>
 
 <h2>5. Needs-review flag (separate file; never changes a value)</h2>
-<p>A value is flagged when the independent reader (PaddleOCR-VL) does not find it on the page, or when a slash date could be day- or month-first; a whole document is flagged if the output was truncated. On dev: <b>document level</b> precision 68.8%, recall 91.7% (a flagged doc is not fully correct); <b>value level</b> precision 39.4%, recall 90.3% (header fields and predicted rows). Column-mapping errors are invisible to a text check by design, so they are only caught at document level when another value is also flagged.</p><pre>doc    precision  68.8%  recall  91.7%  (flagged 16, errors 12, caught 11)
-value  precision  39.4%  recall  90.3%  (flagged 71, errors 31, caught 28)
-  not_in_ocr                               flags   71  precision  39.4%  errors caught  28 (only by this signal 28)</pre>
+<p>A value is flagged when the independent reader (PaddleOCR-VL) does not find it on the page, or when a slash date could be day- or month-first; a whole document is flagged if the output was truncated. On dev: <b>document level</b> precision 68.8%, recall 88.0% (a flagged doc is not fully correct); <b>value level</b> precision 28.0%, recall 82.1% (header fields and predicted rows). Column-mapping errors are invisible to a text check by design, so they are only caught at document level when another value is also flagged.</p><pre>doc    precision  68.8%  recall  88.0%  (flagged 32, errors 25, caught 22)
+value  precision  28.0%  recall  82.1%  (flagged 164, errors 56, caught 46)
+  not_in_ocr                               flags  164  precision  28.0%  errors caught  46 (only by this signal 46)</pre>
 
 <h2>6. Limits and honesty</h2>
 <ul>
-<li>I looked at all 18 train suppliers while analysing the data, and prompt v2 was written after reading dev errors (fold 4 excluded). Dev numbers are therefore optimistic. The fold-4 row is the cleanest unseen estimate, but it has only 8 docs.</li>
-<li>Throughput on the Mac: over 51 docs, 22 s/doc median, 93 s p95, 94 docs/hour on one Mac, 8.1 GB peak for the extractor (+ PaddleOCR-VL ~3 s/page, 2.3 GB, run separately). The transformers backend (<code>--backend hf</code>) for graders without a Mac is implemented but was not run.</li>
-<li>Cut for time: per-fold re-runs, scan upscaling, a second OCR tier for high-precision flags.</li>
+<li>I looked at all 18 train suppliers while analysing the data, and the column-role prompt and its three fixes were written after reading bake-off errors (fold-4 docs excluded). Dev numbers are therefore optimistic. The fold-4 row is the cleanest unseen estimate, but it has only 22 docs.</li>
+<li>Throughput on the Mac: over 300 docs, 20 s/doc median, 83 s p95, 107 docs/hour on one Mac, 8.1 GB peak for the extractor (+ PaddleOCR-VL ~3 s/page, 2.3 GB, run separately). The transformers backend (<code>--backend hf</code>) for graders without a Mac is implemented but was not run.</li>
+<li>Two test invoices (30 rows each) hit the 4,096-token output limit, and one came out empty. The limit was raised to 8,192 and only those two were re-run. No dev doc reached the old limit, so the dev numbers are unaffected.</li>
+<li>Cut for time: a faster prompt (v2, compact output) that turned out slower and was not used; scan upscaling; a second OCR tier for high-precision flags.</li>
 </ul>
 </body></html>

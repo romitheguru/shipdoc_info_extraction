@@ -1,0 +1,61 @@
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 15 files:   7%|▋         | 1/15 [00:00<00:04,  3.30it/s]Fetching 15 files:  33%|███▎      | 5/15 [00:00<00:00, 15.04it/s]Fetching 15 files:  53%|█████▎    | 8/15 [00:00<00:00, 15.48it/s]Fetching 15 files:  87%|████████▋ | 13/15 [00:00<00:00, 20.46it/s]Fetching 15 files:  93%|█████████▎| 14/15 [00:20<00:00, 20.46it/s]Fetching 15 files: 100%|██████████| 15/15 [00:43<00:00,  5.00s/it]Fetching 15 files: 100%|██████████| 15/15 [00:43<00:00,  2.89s/it]
+/Users/romeepanchal/Projects/assignments/fourkites-assignment/assignment-2/candidate/.venv/lib/python3.11/site-packages/transformers/modeling_rope_utils.py:1126: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+Fetching 15 files:   0%|          | 0/15 [00:00<?, ?it/s]Fetching 15 files: 100%|██████████| 15/15 [00:00<00:00, 3801.25it/s]
+1/56 dev_0002_p1.jpg 3s 17 pieces (total 49s)
+2/56 dev_0010_p1.jpg 3s 50 pieces (total 52s)
+3/56 dev_0012_p1.jpg 5s 142 pieces (total 57s)
+4/56 dev_0012_p2.jpg 3s 13 pieces (total 60s)
+5/56 dev_0017_p1.jpg 15s 1045 pieces (total 75s)
+6/56 dev_0017_p2.jpg 5s 115 pieces (total 80s)
+7/56 dev_0017_p3.jpg 2s 13 pieces (total 82s)
+8/56 dev_0018_p1.jpg 2s 17 pieces (total 84s)
+9/56 dev_0020_p1.png 5s 132 pieces (total 89s)
+10/56 dev_0021_p1.jpg 2s 17 pieces (total 91s)
+11/56 dev_0022_p1.png 3s 66 pieces (total 95s)
+12/56 dev_0024_p1.png 2s 17 pieces (total 97s)
+13/56 dev_0027_p1.png 3s 40 pieces (total 100s)
+14/56 dev_0032_p1.jpg 3s 60 pieces (total 103s)
+15/56 dev_0033_p1.png 6s 159 pieces (total 108s)
+16/56 dev_0033_p2.png 3s 37 pieces (total 111s)
+17/56 dev_0034_p1.png 4s 137 pieces (total 116s)
+18/56 dev_0036_p1.png 5s 149 pieces (total 121s)
+19/56 dev_0036_p2.png 2s 12 pieces (total 123s)
+20/56 dev_0037_p1.jpg 5s 134 pieces (total 128s)
+21/56 dev_0037_p2.jpg 4s 16 pieces (total 132s)
+22/56 dev_0037_p3.jpg 2s 21 pieces (total 134s)
+23/56 dev_0038_p1.jpg 5s 137 pieces (total 140s)
+24/56 dev_0038_p2.jpg 3s 10 pieces (total 143s)
+25/56 dev_0042_p1.png 4s 106 pieces (total 147s)
+26/56 dev_0042_p2.png 2s 16 pieces (total 149s)
+27/56 dev_0045_p1.jpg 4s 96 pieces (total 153s)
+28/56 dev_0051_p1.png 3s 31 pieces (total 156s)
+29/56 dev_0052_p1.png 2s 17 pieces (total 158s)
+30/56 dev_0054_p1.png 5s 149 pieces (total 163s)
+31/56 dev_0054_p2.png 4s 81 pieces (total 166s)
+32/56 dev_0058_p1.jpg 2s 14 pieces (total 169s)
+33/56 dev_0060_p1.png 4s 106 pieces (total 173s)
+34/56 dev_0060_p2.png 3s 28 pieces (total 175s)
+35/56 dev_0061_p1.png 3s 66 pieces (total 179s)
+36/56 dev_0066_p1.jpg 3s 40 pieces (total 181s)
+37/56 dev_0067_p1.jpg 4s 90 pieces (total 185s)
+38/56 dev_0068_p1.png 3s 31 pieces (total 188s)
+39/56 dev_0069_p1.jpg 3s 41 pieces (total 191s)
+40/56 dev_0072_p1.jpg 3s 29 pieces (total 193s)
+41/56 dev_0074_p1.jpg 4s 81 pieces (total 197s)
+42/56 dev_0080_p1.png 3s 47 pieces (total 200s)
+43/56 dev_0081_p1.jpg 5s 135 pieces (total 205s)
+44/56 dev_0081_p2.jpg 3s 11 pieces (total 208s)
+45/56 dev_0082_p1.png 5s 135 pieces (total 214s)
+46/56 dev_0082_p2.png 5s 109 pieces (total 218s)
+47/56 dev_0082_p3.png 3s 28 pieces (total 221s)
+48/56 dev_0088_p1.jpg 2s 18 pieces (total 223s)
+49/56 dev_0091_p1.jpg 3s 67 pieces (total 227s)
+50/56 dev_0092_p1.png 2s 17 pieces (total 229s)
+51/56 dev_0093_p1.png 3s 26 pieces (total 232s)
+52/56 dev_0095_p1.jpg 5s 152 pieces (total 237s)
+53/56 dev_0095_p2.jpg 3s 61 pieces (total 240s)
+54/56 dev_0096_p1.jpg 6s 162 pieces (total 246s)
+55/56 dev_0096_p2.jpg 4s 97 pieces (total 250s)
+56/56 dev_0097_p1.jpg 3s 51 pieces (total 253s)

@@ -1,0 +1,29 @@
+[project]
+name = "shipdoc-extraction"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+analysis = [
+    "huggingface-hub>=2.2.0",
+    "numpy>=2.4.6",
+    "opencv-python-headless>=5.0.0.93",
+    "pillow>=13.0.0",
+    "tokenizers>=0.23.3",
+]
+bakeoff = [
+    "mlx-vlm>=0.7.9",
+    "paddleocr>=3.3",
+    "paddlepaddle>=3.3.1",
+    "setuptools>=84.2.1",
+]
+hf = [
+    "accelerate>=1.15.0",
+    "torch>=2.6",
+    "torchvision>=0.29.1",
+    "transformers>=4.57",
+]
+
+[tool.uv]
+default-groups = ["analysis"]

@@ -1,0 +1,9 @@
+bakeoff/cache/
+.venv/
+__pycache__/
+runs/
+.DS_Store
+# provided with the assignment package; copy data/ into place to reproduce
+data/
+scripts/statusline.*
+scripts/last_payload.json

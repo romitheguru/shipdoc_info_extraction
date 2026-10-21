@@ -1,0 +1,3074 @@
+{
+ "dev_0002": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "VANTREL EXPRESS",
+   "mawb": "294-86950820",
+   "hawb": "AZ59093469",
+   "origin_airport": "HKG",
+   "destination_airport": "PVG",
+   "shipper_name": "Taleon Electro Co., Ltd",
+   "consignee_name": "Brenova Supply Inc",
+   "pieces": "36",
+   "gross_weight_kg": "773.6"
+  },
+  "line_items": []
+ },
+ "dev_0010": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "NB68978556",
+   "invoice_date": "2026-07-18",
+   "supplier_name": "Fenium Semiconductor Sdn Bhd",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "JPY",
+   "total_amount": "128516.80",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "RXY/0397/W7",
+    "customer_part_number": "83-4366-98",
+    "purchase_order": "PO4590480574",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "RXY/092/L5OH",
+    "customer_part_number": "23-1202-96",
+    "purchase_order": "PO4525997692",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "RXY/219/2GW",
+    "customer_part_number": "15-9808-84",
+    "purchase_order": "PO4594702510",
+    "quantity": "1000"
+   }
+  ]
+ },
+ "dev_0012": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "WW39649462",
+   "invoice_date": "2026-08-25",
+   "supplier_name": "Kaston Circuits S.r.l.",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "EUR",
+   "total_amount": "1367755.70",
+   "awb_number": "672-98263408"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "NGTT-5286-I8K",
+    "customer_part_number": "CP-973712",
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "NGTT-553-YJ",
+    "customer_part_number": "CP-109407",
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "NGTT-96573-CGT",
+    "customer_part_number": "CP-915490",
+    "purchase_order": null,
+    "quantity": "5410"
+   },
+   {
+    "supplier_part_number": "NGTT-3378-OU6",
+    "customer_part_number": "96-8690-22",
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "NGTT-61807-858",
+    "customer_part_number": "CP-832845",
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "NGTT-29054-MNR",
+    "customer_part_number": "68-5130-31",
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "NGTT-621-732",
+    "customer_part_number": "10-1848-68",
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "NGTT-621-732",
+    "customer_part_number": "81-2566-33",
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "NGTT-8746-ZOG",
+    "customer_part_number": "CP-322250",
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "NGTT-910-5DK",
+    "customer_part_number": "41-7798-50",
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "NGTT-420-0DQ",
+    "customer_part_number": "CP-643461",
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "NGTT-0346-AL2A",
+    "customer_part_number": "CP-645127",
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "NGTT-3081-E",
+    "customer_part_number": "38-7464-76",
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "NGTT-4992-OPR",
+    "customer_part_number": "70-9530-11",
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "NGTT-9007-NB",
+    "customer_part_number": "67-5750-34",
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "NGTT-9007-NB",
+    "customer_part_number": "CP-203521",
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "NGTT-238-N",
+    "customer_part_number": "CP-686198",
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "NGTT-238-N",
+    "customer_part_number": "CP-394082",
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "NGTT-238-N",
+    "customer_part_number": "CP-420386",
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "NGTT-5908-D3",
+    "customer_part_number": "CP-743260",
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "NGTT-5908-D3",
+    "customer_part_number": "CP-266365",
+    "purchase_order": null,
+    "quantity": "1924"
+   },
+   {
+    "supplier_part_number": "NGTT-0653-LWX8",
+    "customer_part_number": "92-2106-48",
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "NGTT-4334-N0H",
+    "customer_part_number": "86-1507-61",
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "NGTT-4334-N0H",
+    "customer_part_number": "CP-194494",
+    "purchase_order": null,
+    "quantity": "100"
+   }
+  ]
+ },
+ "dev_0017": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "TY97748884",
+   "invoice_date": "2026-08-25",
+   "supplier_name": "Jovova Components Ltd",
+   "buyer_name": "Norora Electronics Pte Ltd",
+   "ship_to_name": "Heskyx Supply Sdn Bhd",
+   "currency": "CNY",
+   "total_amount": "1486348.41",
+   "awb_number": "591-43755241"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "UO/094/TO",
+    "customer_part_number": "CP-172494",
+    "purchase_order": "B50175297-005",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "UO/132/19",
+    "customer_part_number": "61-1874-98",
+    "purchase_order": "PO4572876851",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/955/4Y",
+    "customer_part_number": "CP-276601",
+    "purchase_order": "B59698897-001",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/732/7",
+    "customer_part_number": "CP-640335",
+    "purchase_order": "PO4530475300",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "UO/5545/KU",
+    "customer_part_number": "67-6033-39",
+    "purchase_order": "B25126926-006",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "UO/492/08FH",
+    "customer_part_number": "CP-184244",
+    "purchase_order": "B13599765-002",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "UO/441/E",
+    "customer_part_number": "CP-297663",
+    "purchase_order": "PO4514832576",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "UO/4125/1V2X",
+    "customer_part_number": "CP-140095",
+    "purchase_order": "B50588178-009",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "UO/85372/S",
+    "customer_part_number": "35-1269-92",
+    "purchase_order": "B82185102-009",
+    "quantity": "52"
+   },
+   {
+    "supplier_part_number": "UO/19444/SSD9",
+    "customer_part_number": "79-4079-14",
+    "purchase_order": "B62995642-005",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "UO/223/KE",
+    "customer_part_number": "51-4989-55",
+    "purchase_order": "PO4521771821",
+    "quantity": "5475"
+   },
+   {
+    "supplier_part_number": "UO/7615/H7F",
+    "customer_part_number": "62-5373-88",
+    "purchase_order": "PO4545708015",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/50681/DO",
+    "customer_part_number": "CP-383605",
+    "purchase_order": "PO4594991975",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/532/6PHE",
+    "customer_part_number": "47-5361-97",
+    "purchase_order": "PO4577345721",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "UO/204/0XK7",
+    "customer_part_number": "CP-168427",
+    "purchase_order": "B11749698-005",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "UO/52034/I",
+    "customer_part_number": "CP-835657",
+    "purchase_order": "PO4534450039",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "UO/9192/BNU",
+    "customer_part_number": "26-8907-14",
+    "purchase_order": "B94121165-007",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/5365/I",
+    "customer_part_number": "20-8498-94",
+    "purchase_order": "PO4501354954",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/8154/19",
+    "customer_part_number": "CP-971787",
+    "purchase_order": "B44480299-005",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/4239/7O",
+    "customer_part_number": "CP-443503",
+    "purchase_order": "B57953449-008",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "UO/6214/V/RBY",
+    "customer_part_number": "CP-727812",
+    "purchase_order": "PO4555891918",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "UO/698/4",
+    "customer_part_number": "CP-101816",
+    "purchase_order": "PO4583710418",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/37140/9",
+    "customer_part_number": "CP-569903",
+    "purchase_order": "B33224229-005",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/3601/5",
+    "customer_part_number": "CP-928663",
+    "purchase_order": "PO4530663706",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/2408/3ZX3",
+    "customer_part_number": "47-1261-77",
+    "purchase_order": "PO4516624073",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/403/ZF8",
+    "customer_part_number": "CP-314853",
+    "purchase_order": "B77190341-008",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/945/T",
+    "customer_part_number": "CP-407543",
+    "purchase_order": "PO4502632449",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/921/9",
+    "customer_part_number": "CP-428989",
+    "purchase_order": "B39556736-001",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/11623/ZE",
+    "customer_part_number": "CP-377289",
+    "purchase_order": "B12655770-008",
+    "quantity": "3000"
+   }
+  ]
+ },
+ "dev_0018": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "NORTHWIND AIR CARGO",
+   "mawb": "558-91964292",
+   "hawb": "IW45425014",
+   "origin_airport": "NRT",
+   "destination_airport": "GDL",
+   "shipper_name": "Mirrium Semiconductor S.r.l.",
+   "consignee_name": "Breneth Distribution Inc",
+   "pieces": "11",
+   "gross_weight_kg": "399.8"
+  },
+  "line_items": []
+ },
+ "dev_0020": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "TY97222461",
+   "invoice_date": "2026-05-27",
+   "supplier_name": "Jovova Components Ltd",
+   "buyer_name": "Zerara Distribution S.A. de C.V.",
+   "ship_to_name": "Zerara Distribution S.A. de C.V.",
+   "currency": "CNY",
+   "total_amount": "667375.11",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "UO/094/TO",
+    "customer_part_number": "CP-868902",
+    "purchase_order": "B43762960-001",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "UO/37140/9",
+    "customer_part_number": "44-6799-43",
+    "purchase_order": "B85517700-002",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/4239/7O",
+    "customer_part_number": "CP-137045",
+    "purchase_order": "PO4516414187",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "UO/5365/I",
+    "customer_part_number": "CP-457401",
+    "purchase_order": "B78940254-008",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/5758/U",
+    "customer_part_number": "CP-325418",
+    "purchase_order": "B55431397-003",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "UO/26761/MW",
+    "customer_part_number": "CP-220209",
+    "purchase_order": "PO4559365098",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "UO/223/KE",
+    "customer_part_number": "CP-305005",
+    "purchase_order": "B16040543-002",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "UO/50681/DO",
+    "customer_part_number": "44-8967-93",
+    "purchase_order": "B90969511-006",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "UO/441/E",
+    "customer_part_number": "28-8782-79",
+    "purchase_order": "PO4552545044",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "UO/433/KVL",
+    "customer_part_number": "70-4143-26",
+    "purchase_order": "B67840403-008",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "UO/8154/19",
+    "customer_part_number": "CP-490864",
+    "purchase_order": "B59855000-004",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "UO/19444/SSD9",
+    "customer_part_number": "32-5217-48",
+    "purchase_order": "PO4571005644",
+    "quantity": "250"
+   }
+  ]
+ },
+ "dev_0021": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "BLUEFIN FORWARDING",
+   "mawb": "443-84488912",
+   "hawb": "CW33131226",
+   "origin_airport": "TPE",
+   "destination_airport": "FRA",
+   "shipper_name": "Galdex Microsystems GmbH",
+   "consignee_name": "Dovaris Trading Pte Ltd",
+   "pieces": "35",
+   "gross_weight_kg": "401.9"
+  },
+  "line_items": []
+ },
+ "dev_0022": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "CQ61029686",
+   "invoice_date": "2026-01-23",
+   "supplier_name": "Vexenta Electro LLC",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Quoreth Trading GmbH",
+   "currency": "SGD",
+   "total_amount": "938232.37",
+   "awb_number": "411-97530633"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "PX/8685/X96",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "4702"
+   },
+   {
+    "supplier_part_number": "PX/290/WPC",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "PX/7682/J3WG",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "PX/9012/27B",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "PX/4448/SZ4",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "PX/401/FA9",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "PX/45219/WH1K",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   }
+  ]
+ },
+ "dev_0024": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "SILVERLINE EXPRESS",
+   "mawb": "691-79524239",
+   "hawb": "WL16814332",
+   "origin_airport": "AMS",
+   "destination_airport": "DFW",
+   "shipper_name": "Brenon Industrial S.r.l.",
+   "consignee_name": "Veleon Supply Pte Ltd",
+   "pieces": "2",
+   "gross_weight_kg": "263.6"
+  },
+  "line_items": []
+ },
+ "dev_0027": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "NK47723982",
+   "invoice_date": "2026-07-30",
+   "supplier_name": "Talara Power Systems Co., Ltd",
+   "buyer_name": "Zerara Distribution S.A. de C.V.",
+   "ship_to_name": "Zerara Distribution S.A. de C.V.",
+   "currency": "CNY",
+   "total_amount": "96326.03",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "ZO-581-LIB",
+    "customer_part_number": null,
+    "purchase_order": "PO4524941109",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "ZO-738-86",
+    "customer_part_number": null,
+    "purchase_order": "B74850500-006",
+    "quantity": "250"
+   }
+  ]
+ },
+ "dev_0032": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "ZT35015332",
+   "invoice_date": "2026-07-19",
+   "supplier_name": "Galdek Components LLC",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "CNY",
+   "total_amount": "97271.60",
+   "awb_number": "635-53379296"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "CP-206286",
+    "customer_part_number": "BQN-380-TB3",
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "CP-613492",
+    "customer_part_number": "BQN-95493-P32",
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "44-9956-23",
+    "customer_part_number": "BQN-95493-P32",
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "86-4655-35",
+    "customer_part_number": "BQN-827-G5",
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "CP-732080",
+    "customer_part_number": "BQN-827-G5",
+    "purchase_order": null,
+    "quantity": "500"
+   }
+  ]
+ },
+ "dev_0033": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "QU13640239",
+   "invoice_date": "2026-02-05",
+   "supplier_name": "Lumex Electro S.r.l.",
+   "buyer_name": "Zerara Distribution S.A. de C.V.",
+   "ship_to_name": "Zerara Distribution S.A. de C.V.",
+   "currency": "SGD",
+   "total_amount": "1264519.73",
+   "awb_number": "399-63114080"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "OVVX44112QPG",
+    "customer_part_number": "CP-696056",
+    "purchase_order": "P04503319053",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "OVVX09202",
+    "customer_part_number": "42-5319-30",
+    "purchase_order": "P04524643888",
+    "quantity": "7730"
+   },
+   {
+    "supplier_part_number": "OVVX91061TBP7",
+    "customer_part_number": "40-9739-15",
+    "purchase_order": "B93838964-004",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OVVX21791PFD",
+    "customer_part_number": "CP-573702",
+    "purchase_order": "P04566215538",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "OVVX21791PFD",
+    "customer_part_number": "99-4454-22",
+    "purchase_order": "P04528936195",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OVVX292K",
+    "customer_part_number": "CP-596441",
+    "purchase_order": "B87842864-003",
+    "quantity": "6352"
+   },
+   {
+    "supplier_part_number": "OVVX79422IK",
+    "customer_part_number": "46-7922-42",
+    "purchase_order": "P04516906105",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OVVX141F7G",
+    "customer_part_number": "53-3487-37",
+    "purchase_order": "B98185391-001",
+    "quantity": "5735"
+   },
+   {
+    "supplier_part_number": "OVVX141F7G",
+    "customer_part_number": "55-5198-72",
+    "purchase_order": "B27754015-008",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OVVX95368ZZ1",
+    "customer_part_number": "57-6677-43",
+    "purchase_order": "B38418354-009",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OVVX647H",
+    "customer_part_number": "71-6486-99",
+    "purchase_order": "P04548616199",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "OVVX76308M68",
+    "customer_part_number": "CP-501942",
+    "purchase_order": "B92466979-001",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OVVX76308M68",
+    "customer_part_number": "CP-750396",
+    "purchase_order": "P04562237092",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "OVVX76308M68",
+    "customer_part_number": "CP-487346",
+    "purchase_order": "B85964825-009",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "OVVX3503",
+    "customer_part_number": "CP-266131",
+    "purchase_order": "B93882249-009",
+    "quantity": "7185"
+   },
+   {
+    "supplier_part_number": "OVVX68177",
+    "customer_part_number": "52-4511-13",
+    "purchase_order": "B88891521-004",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OVVX193110QU0",
+    "customer_part_number": "CP-398426",
+    "purchase_order": "P04589136873",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OVVX598378",
+    "customer_part_number": "CP-172089",
+    "purchase_order": "B45051854-009",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "OVVX598378",
+    "customer_part_number": "81-6402-79",
+    "purchase_order": "B66121854-005",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "OVVX598378",
+    "customer_part_number": "CP-722261",
+    "purchase_order": "P04535266091",
+    "quantity": "1643"
+   }
+  ]
+ },
+ "dev_0034": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "GY21241881",
+   "invoice_date": "2026-07-06",
+   "supplier_name": "Talitek Power Systems Pte Ltd",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Quorora Electronics Ltd",
+   "currency": "SGD",
+   "total_amount": "1678324.82",
+   "awb_number": "220-96662212"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "GHSR676621",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR000VW0",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "6901"
+   },
+   {
+    "supplier_part_number": "GHSR57102",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR5306",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5009"
+   },
+   {
+    "supplier_part_number": "GHSR024CGGO",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GHSR6190206",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR0379371",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR227LB",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GHSR812274P",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR99967",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR28501KT2A",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GHSR28501KT2A",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GHSR274209",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "6025"
+   },
+   {
+    "supplier_part_number": "GHSR274209",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GHSR0549UNB",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR0549UNB",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   }
+  ]
+ },
+ "dev_0036": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "GF37871797",
+   "invoice_date": "2026-07-13",
+   "supplier_name": "Zerova Circuits Inc",
+   "buyer_name": "Zerara Distribution S.A. de C.V.",
+   "ship_to_name": "Zerara Distribution S.A. de C.V.",
+   "currency": "USD",
+   "total_amount": "1424567.04",
+   "awb_number": "171-45593781"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "EOEM-580-NZV3",
+    "customer_part_number": null,
+    "purchase_order": "B69770384-008",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "EOEM-0372-SK",
+    "customer_part_number": null,
+    "purchase_order": "B66883109-002",
+    "quantity": "3321"
+   },
+   {
+    "supplier_part_number": "EOEM-07514-0",
+    "customer_part_number": null,
+    "purchase_order": "PO4585686316",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "EOEM-009-JE",
+    "customer_part_number": null,
+    "purchase_order": "PO4551837644",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "EOEM-1692-9I6",
+    "customer_part_number": null,
+    "purchase_order": "PO4588181369",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "EOEM-692-UBBM",
+    "customer_part_number": null,
+    "purchase_order": "B61153492-002",
+    "quantity": "7099"
+   },
+   {
+    "supplier_part_number": "EOEM-1128-2K",
+    "customer_part_number": null,
+    "purchase_order": "PO4577843967",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "EOEM-543-80",
+    "customer_part_number": null,
+    "purchase_order": "B95838994-001",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "EOEM-638-OT2Y",
+    "customer_part_number": null,
+    "purchase_order": "PO4540153733",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "EOEM-96371-UTOY",
+    "customer_part_number": null,
+    "purchase_order": "B57070119-006",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "EOEM-9176-3",
+    "customer_part_number": null,
+    "purchase_order": "B94079080-009",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "EOEM-3802-V3S",
+    "customer_part_number": null,
+    "purchase_order": "PO4502854687",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "EOEM-716-UXCK",
+    "customer_part_number": null,
+    "purchase_order": "PO4541622971",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "EOEM-6576-O1M5",
+    "customer_part_number": null,
+    "purchase_order": "B22175015-003",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "EOEM-65797-CH",
+    "customer_part_number": null,
+    "purchase_order": "PO4595837781",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "EOEM-746-Y",
+    "customer_part_number": null,
+    "purchase_order": "B54173453-001",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "EOEM-204-Q",
+    "customer_part_number": null,
+    "purchase_order": "PO4523788510",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "EOEM-70129-9Y8",
+    "customer_part_number": null,
+    "purchase_order": "B19635477-008",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "EOEM-0565-KNV",
+    "customer_part_number": null,
+    "purchase_order": "B85141441-008",
+    "quantity": "1000"
+   }
+  ]
+ },
+ "dev_0037": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "MZ53711822",
+   "invoice_date": "2026-03-13",
+   "supplier_name": "Heskeon Power Systems B.V.",
+   "buyer_name": "Norora Electronics Pte Ltd",
+   "ship_to_name": "Norora Electronics Pte Ltd",
+   "currency": "SGD",
+   "total_amount": "1824181.82",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "IPLK435X2S",
+    "customer_part_number": null,
+    "purchase_order": "PO4553750322",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "IPLK87655ZYF",
+    "customer_part_number": null,
+    "purchase_order": "B61582571-005",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "IPLK38040R6",
+    "customer_part_number": null,
+    "purchase_order": "B93022435-003",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "IPLK5663H6Q",
+    "customer_part_number": null,
+    "purchase_order": "PO4559101599",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "IPLK752301",
+    "customer_part_number": null,
+    "purchase_order": "PO4504936450",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "IPLK6349HMG5",
+    "customer_part_number": null,
+    "purchase_order": "PO4539831606",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "IPLK00415A5",
+    "customer_part_number": null,
+    "purchase_order": "B58587384-006",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "IPLK083D",
+    "customer_part_number": null,
+    "purchase_order": "PO4528095372",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "IPLK27221AT",
+    "customer_part_number": null,
+    "purchase_order": "B68314832-006",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "IPLK86596F",
+    "customer_part_number": null,
+    "purchase_order": "B23951719-008",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "IPLK2645QY",
+    "customer_part_number": null,
+    "purchase_order": "PO4514554304",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "IPLK735C8Q",
+    "customer_part_number": null,
+    "purchase_order": "PO4500440003",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "IPLK0342J",
+    "customer_part_number": null,
+    "purchase_order": "B47275069-002",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "IPLK621CI",
+    "customer_part_number": null,
+    "purchase_order": "B91511288-009",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "IPLK0149ZO",
+    "customer_part_number": null,
+    "purchase_order": "PO4566302773",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "IPLK042395E",
+    "customer_part_number": null,
+    "purchase_order": "B91809970-002",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "IPLK170T",
+    "customer_part_number": null,
+    "purchase_order": "B86638006-006",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "IPLK344F",
+    "customer_part_number": null,
+    "purchase_order": "PO4539737346",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "IPLK935F",
+    "customer_part_number": null,
+    "purchase_order": "B24346567-005",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "IPLK738T",
+    "customer_part_number": null,
+    "purchase_order": "B65789558-003",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "IPLK515WDE0",
+    "customer_part_number": null,
+    "purchase_order": "B71706330-002",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "IPLK3853P",
+    "customer_part_number": null,
+    "purchase_order": "B72457281-008",
+    "quantity": "2498"
+   },
+   {
+    "supplier_part_number": "IPLK10713FDP",
+    "customer_part_number": null,
+    "purchase_order": "PO4550457846",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "IPLK9850U",
+    "customer_part_number": null,
+    "purchase_order": "PO4521757353",
+    "quantity": "6417"
+   },
+   {
+    "supplier_part_number": "IPLK162VAT",
+    "customer_part_number": null,
+    "purchase_order": "PO4525247118",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "IPLK59950V",
+    "customer_part_number": null,
+    "purchase_order": "B92466632-003",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "IPLK5593F",
+    "customer_part_number": null,
+    "purchase_order": "PO4526252433",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "IPLK7418DM1",
+    "customer_part_number": null,
+    "purchase_order": "B26814346-004",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "IPLK9310B05",
+    "customer_part_number": null,
+    "purchase_order": "B57665757-005",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "IPLK2149DAC",
+    "customer_part_number": null,
+    "purchase_order": "PO4575835055",
+    "quantity": "100"
+   }
+  ]
+ },
+ "dev_0038": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "QU16305942",
+   "invoice_date": "2026-03-16",
+   "supplier_name": "Lumex Electro S.r.l.",
+   "buyer_name": "Vexek Trading Inc",
+   "ship_to_name": "Vexek Trading Inc",
+   "currency": "SGD",
+   "total_amount": "1272009.08",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "OVVX193110QU0",
+    "customer_part_number": "CP-870624",
+    "purchase_order": "B47103432-001",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OVVX3503",
+    "customer_part_number": "CP-266237",
+    "purchase_order": "PO4533624966",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OVVX0303AVJ",
+    "customer_part_number": "66-9958-28",
+    "purchase_order": "PO4523808654",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "OVVX2482B4IW",
+    "customer_part_number": "78-7975-60",
+    "purchase_order": "PO4558300193",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OVVX68177",
+    "customer_part_number": "CP-887930",
+    "purchase_order": "B46736644-002",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OVVX0673V",
+    "customer_part_number": "CP-834330",
+    "purchase_order": "B42196210-005",
+    "quantity": "2966"
+   },
+   {
+    "supplier_part_number": "OVVX395AG",
+    "customer_part_number": "CP-800836",
+    "purchase_order": "B84081722-005",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "OVVX68979YB90",
+    "customer_part_number": "CP-162059",
+    "purchase_order": "B40304316-003",
+    "quantity": "7276"
+   },
+   {
+    "supplier_part_number": "OVVX44675E9",
+    "customer_part_number": "CP-227488",
+    "purchase_order": "B56333424-006",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OVVX2931Y5",
+    "customer_part_number": "97-1965-28",
+    "purchase_order": "B28645858-006",
+    "quantity": "3677"
+   },
+   {
+    "supplier_part_number": "OVVX95752K0",
+    "customer_part_number": "72-6549-58",
+    "purchase_order": "B98375099-005",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OVVX903I78",
+    "customer_part_number": "17-7840-27",
+    "purchase_order": "B80855377-005",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OVVX6740AAJ",
+    "customer_part_number": "CP-388003",
+    "purchase_order": "B36916303-001",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "OVVX44112QPG",
+    "customer_part_number": "42-1006-36",
+    "purchase_order": "PO4572635292",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "OVVX95368ZZ1",
+    "customer_part_number": "CP-984377",
+    "purchase_order": "B82216634-008",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OVVX69409G",
+    "customer_part_number": "65-2497-21",
+    "purchase_order": "PO4532571505",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OVVX71557C",
+    "customer_part_number": "44-9144-48",
+    "purchase_order": "B36285866-006",
+    "quantity": "5425"
+   },
+   {
+    "supplier_part_number": "OVVX511256",
+    "customer_part_number": "76-8344-70",
+    "purchase_order": "B44561316-001",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OVVX571PUMB",
+    "customer_part_number": "26-3952-65",
+    "purchase_order": "B64502512-003",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OVVX647H",
+    "customer_part_number": "25-2900-65",
+    "purchase_order": "PO4595833534",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "OVVX13620Q",
+    "customer_part_number": "88-8528-73",
+    "purchase_order": "PO4589328500",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OVVX72864YD",
+    "customer_part_number": "CP-119265",
+    "purchase_order": "B19339589-008",
+    "quantity": "1000"
+   }
+  ]
+ },
+ "dev_0042": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "EW25414128",
+   "invoice_date": "2026-08-11",
+   "supplier_name": "Tambova Circuits S.A. de C.V.",
+   "buyer_name": "Zerara Distribution S.A. de C.V.",
+   "ship_to_name": "Zerara Distribution S.A. de C.V.",
+   "currency": "CNY",
+   "total_amount": "585484.79",
+   "awb_number": "586-32425952"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "OWH5698NOZ2",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OWH3633YX",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OWH3633YX",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "OWH3633YX",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OWH171A7",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "OWH60270",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OWH60270",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH60270",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OWH60270",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "4792"
+   },
+   {
+    "supplier_part_number": "OWH711760K",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH350809Z3",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH350809Z3",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OWH350809Z3",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OWH47965TV",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "OWH9687QOG",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OWH88524S",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   }
+  ]
+ },
+ "dev_0045": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "CQ68596136",
+   "invoice_date": "2026-03-31",
+   "supplier_name": "Vexenta Electro LLC",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Quorora Electronics Ltd",
+   "currency": "CNY",
+   "total_amount": "884548.01",
+   "awb_number": "769-42191833"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "PX/9012/27B",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "PX/59784/QU",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3511"
+   },
+   {
+    "supplier_part_number": "PX/4448/SZ4",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "PX/4448/SZ4",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "PX/4448/SZ4",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1398"
+   },
+   {
+    "supplier_part_number": "PX/4448/SZ4",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "789"
+   },
+   {
+    "supplier_part_number": "PX/72258/A05",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "PX/72258/A05",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "PX/965/QDOA",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "PX/965/QDOA",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "PX/145/DAP",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "PX/658/K",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   }
+  ]
+ },
+ "dev_0051": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": null,
+   "invoice_date": "2026-04-30",
+   "supplier_name": "Galdek Components LLC",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Quorora Electronics Ltd",
+   "currency": "CNY",
+   "total_amount": "141860.5",
+   "awb_number": "382-53830260"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "BQN-2367-U",
+    "customer_part_number": "63-8328-44",
+    "purchase_order": null,
+    "quantity": "2500"
+   }
+  ]
+ },
+ "dev_0052": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "SKYBRIDGE AIR CARGO",
+   "mawb": "526-16140149",
+   "hawb": "VL63582684",
+   "origin_airport": "SIN",
+   "destination_airport": "HKG",
+   "shipper_name": "Rhenium Precision Sdn Bhd",
+   "consignee_name": "Vexeon Electronics Ltd",
+   "pieces": "33",
+   "gross_weight_kg": "457.2"
+  },
+  "line_items": []
+ },
+ "dev_0054": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "GY26828580",
+   "invoice_date": "2026-01-18",
+   "supplier_name": "Talitek Power Systems Pte Ltd",
+   "buyer_name": "Norora Electronics Pte Ltd",
+   "ship_to_name": "Norora Electronics Pte Ltd",
+   "currency": "JPY",
+   "total_amount": "1043914.00",
+   "awb_number": "900-86570662"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "GHSR274209",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GHSR024CGGO",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "615"
+   },
+   {
+    "supplier_part_number": "GHSR76503NW",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GHSR56815YE",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GHSR3100KD",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1936"
+   },
+   {
+    "supplier_part_number": "GHSR20581W",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR848K",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GHSR000VW0",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GHSR1972ERC",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GHSR883W2T",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GHSR0379371",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GHSR5598NJ8",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR212E3Z",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GHSR921168LS",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR0549UNB",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GHSR521FF",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GHSR99313KOV",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GHSR203UY90",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GHSR99967",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GHSR676621",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR2422R",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR06551",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GHSR61902O6",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1582"
+   },
+   {
+    "supplier_part_number": "GHSR6963SR18",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR57102",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "7894"
+   },
+   {
+    "supplier_part_number": "GHSR31371YME",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR8589G",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GHSR72873D1S5",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GHSR60414N",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   }
+  ]
+ },
+ "dev_0058": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "QUILLON EXPRESS",
+   "mawb": "905-78685785",
+   "hawb": null,
+   "origin_airport": "BKK",
+   "destination_airport": "HKG",
+   "shipper_name": "Sorek Microsystems GmbH",
+   "consignee_name": "Quorium Trading LLC",
+   "pieces": "3",
+   "gross_weight_kg": "632.8"
+  },
+  "line_items": []
+ },
+ "dev_0060": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "EW29294858",
+   "invoice_date": "2026-07-13",
+   "supplier_name": "Tambova Circuits S.A. de C.V.",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Quorora Electronics Ltd",
+   "currency": "USD",
+   "total_amount": "436152.00",
+   "awb_number": "124-59246948"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "OWH21628MJJ",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OWH832571XY2",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH7719U",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3681"
+   },
+   {
+    "supplier_part_number": "OWH79534H1",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OWH26909VJBO",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH93559P",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OWH53869",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OWH1234M",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH3874X1",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH1451QY",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "OWH9687QOG",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH227QUM",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OWH403HCL",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OWH5438S",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "OWH8386379O",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "OWH899077JX",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "OWH7812975",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "OWH171A7",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   }
+  ]
+ },
+ "dev_0061": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "ST16232288",
+   "invoice_date": "2026-06-16",
+   "supplier_name": "Galdon Semiconductor S.r.l.",
+   "buyer_name": "Vexek Trading Inc",
+   "ship_to_name": "Vexek Trading Inc",
+   "currency": "JPY",
+   "total_amount": "417188.50",
+   "awb_number": "751-91405643"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "NQL8453T1O",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "NQL666CHD",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "NQL419E3",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "NQL355461",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "NQL355461",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "NQL355461",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   }
+  ]
+ },
+ "dev_0066": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "QU16721187",
+   "invoice_date": null,
+   "supplier_name": "Lumex Electro S.r.l.",
+   "buyer_name": "Vexek Trading Inc",
+   "ship_to_name": "Vexek Trading Inc",
+   "currency": "EUR",
+   "total_amount": "194950.56",
+   "awb_number": "881-60495089"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "OVVX511256",
+    "customer_part_number": "12-3386-63",
+    "purchase_order": "PO4569213187",
+    "quantity": "3307"
+   },
+   {
+    "supplier_part_number": "OVVX2931Y5",
+    "customer_part_number": "19-9542-96",
+    "purchase_order": "B78752267-001",
+    "quantity": "500"
+   }
+  ]
+ },
+ "dev_0067": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "ME47380244",
+   "invoice_date": "2026-05-09",
+   "supplier_name": "Jovon Power Systems Inc",
+   "buyer_name": "Norora Electronics Pte Ltd",
+   "ship_to_name": "Velitek Sourcing Sdn Bhd",
+   "currency": "SGD",
+   "total_amount": "571440.85",
+   "awb_number": "527-88823290"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "US/81930/Z2",
+    "customer_part_number": null,
+    "purchase_order": "B43065568-005",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "US/81930/Z2",
+    "customer_part_number": null,
+    "purchase_order": "PO4525157289",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "US/81930/Z2",
+    "customer_part_number": null,
+    "purchase_order": "B90144844-009",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "US/6041/GJ33",
+    "customer_part_number": null,
+    "purchase_order": "PO4501042579",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "US/6968/L5",
+    "customer_part_number": null,
+    "purchase_order": "PO4531142069",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "US/6567/RIU",
+    "customer_part_number": null,
+    "purchase_order": "PO4517236799",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "US/6567/RIU",
+    "customer_part_number": null,
+    "purchase_order": "PO4541336227",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "US/6567/RIU",
+    "customer_part_number": null,
+    "purchase_order": "PO4577352809",
+    "quantity": "2500"
+   }
+  ]
+ },
+ "dev_0068": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "NK48920050",
+   "invoice_date": null,
+   "supplier_name": "Talara Power Systems Co., Ltd",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Velara Trading Sdn Bhd",
+   "currency": "CNY",
+   "total_amount": "1333.47",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "ZO-08075-P",
+    "customer_part_number": null,
+    "purchase_order": "B30749953-003",
+    "quantity": "250"
+   }
+  ]
+ },
+ "dev_0069": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": null,
+   "invoice_date": "2026-02-19",
+   "supplier_name": "Vexaris Circuits LLC",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "SGD",
+   "total_amount": "155892.71",
+   "awb_number": "214-68910100"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "LH-617-E95",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "915"
+   },
+   {
+    "supplier_part_number": "LH-25860-120U",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "LH-25860-120U",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "LH-25860-120U",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   }
+  ]
+ },
+ "dev_0072": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "KH37356961",
+   "invoice_date": "2026-02-19",
+   "supplier_name": "Kastara Devices GmbH",
+   "buyer_name": "Norora Electronics Pte Ltd",
+   "ship_to_name": "Norora Electronics Pte Ltd",
+   "currency": "USD",
+   "total_amount": "2861.29",
+   "awb_number": "166-36699832"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "CL-42859-N",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   }
+  ]
+ },
+ "dev_0074": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "GY29830897",
+   "invoice_date": "2026-08-27",
+   "supplier_name": "Talitek Power Systems Pte Ltd",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "JPY",
+   "total_amount": "879346.95",
+   "awb_number": "732-67941570"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "GHSR60414N",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GHSR798911NAN",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5648"
+   },
+   {
+    "supplier_part_number": "GHSR5831G2",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR06551",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GHSR212E3Z",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GHSR521FF",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GHSR052563",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GHSR024CGGO",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   }
+  ]
+ },
+ "dev_0080": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "GJ47280618",
+   "invoice_date": "2026-03-13",
+   "supplier_name": "Vexaris Circuits LLC",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "SGD",
+   "total_amount": "66703.82",
+   "awb_number": "130-24167928"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "LH-6912-NK",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3225"
+   },
+   {
+    "supplier_part_number": "LH-752-W",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "LH-617-E95",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "LH-80658-H",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "LH-259-GH8",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   }
+  ]
+ },
+ "dev_0081": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "PI36622017",
+   "invoice_date": "2026-06-28",
+   "supplier_name": "Brenara Industrial Sdn Bhd",
+   "buyer_name": "Zerara Distribution S.A. de C.V.",
+   "ship_to_name": "Galdion Supply S.A. de C.V.",
+   "currency": "EUR",
+   "total_amount": "1326854.65",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "GLT/28551/858",
+    "customer_part_number": "CP-214649",
+    "purchase_order": "B92227713-003",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GLT/71459/Y",
+    "customer_part_number": "CP-717550",
+    "purchase_order": "B90579952-008",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GLT/50563/IXT",
+    "customer_part_number": "CP-346819",
+    "purchase_order": "PO4567840172",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/61097/0",
+    "customer_part_number": "69-1705-19",
+    "purchase_order": "PO4529516501",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/543/8Q",
+    "customer_part_number": "52-6772-19",
+    "purchase_order": "B54919050-008",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GLT/471/WTI",
+    "customer_part_number": "45-1923-74",
+    "purchase_order": "PO4524104373",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GLT/1494/Z",
+    "customer_part_number": "31-9864-95",
+    "purchase_order": "B98913274-004",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GLT/977/A94K",
+    "customer_part_number": "73-3485-90",
+    "purchase_order": "PO4552721597",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/516/BB",
+    "customer_part_number": "CP-523405",
+    "purchase_order": "PO4596547042",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GLT/238/73I",
+    "customer_part_number": "CP-313555",
+    "purchase_order": "PO4592950764",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GLT/50513/DPOO",
+    "customer_part_number": "CP-871034",
+    "purchase_order": "B71066221-005",
+    "quantity": "3620"
+   },
+   {
+    "supplier_part_number": "GLT/7655/YQU9",
+    "customer_part_number": "12-7659-63",
+    "purchase_order": "B81506542-001",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/6129/1",
+    "customer_part_number": "CP-516325",
+    "purchase_order": "B32438169-006",
+    "quantity": "1427"
+   },
+   {
+    "supplier_part_number": "GLT/29394/XUUE",
+    "customer_part_number": "93-1977-69",
+    "purchase_order": "B84225624-004",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GLT/49663/D",
+    "customer_part_number": "20-7127-69",
+    "purchase_order": "B39543151-008",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/06443/PCX",
+    "customer_part_number": "CP-947833",
+    "purchase_order": "PO4551708841",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GLT/2824/CA",
+    "customer_part_number": "74-4868-62",
+    "purchase_order": "B79383988-004",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/48133/T",
+    "customer_part_number": "CP-538756",
+    "purchase_order": "PO4541871263",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/091/T",
+    "customer_part_number": "CP-334909",
+    "purchase_order": "PO4525394702",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GLT/224/HBMZ",
+    "customer_part_number": "CP-618889",
+    "purchase_order": "B40495378-005",
+    "quantity": "2500"
+   }
+  ]
+ },
+ "dev_0082": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "PI39409700",
+   "invoice_date": "2026-05-16",
+   "supplier_name": "Brenara Industrial Sdn Bhd",
+   "buyer_name": "Zerara Distribution S.A. de C.V.",
+   "ship_to_name": "Norora Sourcing GmbH",
+   "currency": "EUR",
+   "total_amount": "2129599.53",
+   "awb_number": "522-50751189"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "GLT/48133/T",
+    "customer_part_number": "CP-859936",
+    "purchase_order": "B99388064-009",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/48133/T",
+    "customer_part_number": "77-9353-38",
+    "purchase_order": "B72935307-003",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/48133/T",
+    "customer_part_number": "17-9472-76",
+    "purchase_order": "PO4568154374",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GLT/48133/T",
+    "customer_part_number": "35-3606-59",
+    "purchase_order": "B88494739-005",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GLT/49663/D",
+    "customer_part_number": "21-4358-64",
+    "purchase_order": "PO4577134182",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GLT/49663/D",
+    "customer_part_number": "22-8674-77",
+    "purchase_order": "B91075387-007",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GLT/50563/IXT",
+    "customer_part_number": "88-2650-51",
+    "purchase_order": "B61361596-007",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GLT/12665/KYYF",
+    "customer_part_number": "CP-991438",
+    "purchase_order": "PO4599365500",
+    "quantity": "934"
+   },
+   {
+    "supplier_part_number": "GLT/585/87",
+    "customer_part_number": "86-7718-14",
+    "purchase_order": "B95388522-007",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GLT/238/73I",
+    "customer_part_number": "CP-743220",
+    "purchase_order": "PO4554962986",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/6422/T",
+    "customer_part_number": "CP-134982",
+    "purchase_order": "B79445909-009",
+    "quantity": "2072"
+   },
+   {
+    "supplier_part_number": "GLT/977/A94K",
+    "customer_part_number": "CP-476549",
+    "purchase_order": "PO4564129358",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/662/8",
+    "customer_part_number": "41-9230-42",
+    "purchase_order": "PO4508860657",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GLT/71459/Y",
+    "customer_part_number": "49-6019-55",
+    "purchase_order": "PO4546668354",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "GLT/516/BB",
+    "customer_part_number": "CP-299100",
+    "purchase_order": "PO4523107960",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/1190/F",
+    "customer_part_number": "12-2740-68",
+    "purchase_order": "B45947917-006",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GLT/1190/F",
+    "customer_part_number": "74-7814-40",
+    "purchase_order": "PO4507842860",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "GLT/06066/AAS1",
+    "customer_part_number": "83-9031-56",
+    "purchase_order": "PO4552767710",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GLT/41102/2",
+    "customer_part_number": "19-2399-64",
+    "purchase_order": "B53713577-006",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "GLT/77415/V2",
+    "customer_part_number": "CP-666333",
+    "purchase_order": "PO4582588435",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GLT/29394/XUUE",
+    "customer_part_number": "CP-680344",
+    "purchase_order": "PO4512890455",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GLT/817/A",
+    "customer_part_number": "CP-743911",
+    "purchase_order": "B66998937-005",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/61097/0",
+    "customer_part_number": "CP-145261",
+    "purchase_order": "B26001023-001",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/61097/0",
+    "customer_part_number": "CP-912196",
+    "purchase_order": "B89324309-002",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/61097/0",
+    "customer_part_number": "CP-827941",
+    "purchase_order": "B89004608-003",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "GLT/47316/V",
+    "customer_part_number": "66-8869-80",
+    "purchase_order": "PO4556287026",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "GLT/1741/Z",
+    "customer_part_number": "17-3984-86",
+    "purchase_order": "B91900726-007",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "GLT/36155/OG",
+    "customer_part_number": "35-7068-83",
+    "purchase_order": "B70309463-005",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/9126/OB",
+    "customer_part_number": "72-6814-84",
+    "purchase_order": "B11800265-008",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "GLT/9126/OB",
+    "customer_part_number": "CP-277471",
+    "purchase_order": "B14041989-009",
+    "quantity": "2500"
+   }
+  ]
+ },
+ "dev_0088": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "MERIDIAN LOGISTICS",
+   "mawb": "404-82985081",
+   "hawb": "QN94537170",
+   "origin_airport": "MNL",
+   "destination_airport": "ICN",
+   "shipper_name": "Kastek Electro Sdn Bhd",
+   "consignee_name": "Jovion Supply S.r.l.",
+   "pieces": "7",
+   "gross_weight_kg": "598.9"
+  },
+  "line_items": []
+ },
+ "dev_0091": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "OK79253646",
+   "invoice_date": "2026-02-13",
+   "supplier_name": "Vexova Sensors Inc",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "USD",
+   "total_amount": "378483.75",
+   "awb_number": "705-99442598"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "UMNY-29591-1",
+    "customer_part_number": null,
+    "purchase_order": "B42549534-001",
+    "quantity": "5026"
+   },
+   {
+    "supplier_part_number": "UMNY-008-5",
+    "customer_part_number": null,
+    "purchase_order": "B83886962-008",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "UMNY-24932-R",
+    "customer_part_number": null,
+    "purchase_order": "PO4568377910",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "UMNY-08924-CM",
+    "customer_part_number": null,
+    "purchase_order": "PO4562527053",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "UMNY-582-4I",
+    "customer_part_number": null,
+    "purchase_order": "B92850024-005",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "UMNY-294-H",
+    "customer_part_number": null,
+    "purchase_order": "PO4578068679",
+    "quantity": "1000"
+   }
+  ]
+ },
+ "dev_0092": {
+  "doc_type": "waybill",
+  "header": {
+   "carrier": "TIDEWATER AIR CARGO",
+   "mawb": "680-78447098",
+   "hawb": "BO20765126",
+   "origin_airport": "DFW",
+   "destination_airport": "AMS",
+   "shipper_name": "Heskitek Precision S.A. de C.V.",
+   "consignee_name": "Talitek Electronics Pte Ltd",
+   "pieces": "21",
+   "gross_weight_kg": "650.1"
+  },
+  "line_items": []
+ },
+ "dev_0093": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "GJ44527118",
+   "invoice_date": "2026-04-18",
+   "supplier_name": "Vexaris Circuits LLC",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Quorora Electronics Ltd",
+   "currency": "USD",
+   "total_amount": "20475.95",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "LH-383-5",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   }
+  ]
+ },
+ "dev_0095": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "ME42150041",
+   "invoice_date": "2026-01-21",
+   "supplier_name": "Jovon Power Systems Inc",
+   "buyer_name": "Sorara Distribution Ltd",
+   "ship_to_name": "Sorara Distribution Ltd",
+   "currency": "JPY",
+   "total_amount": "1783113.96",
+   "awb_number": "680-42973362"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "US/34375/1ZT",
+    "customer_part_number": null,
+    "purchase_order": "PO4536401543",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "US/524/VN",
+    "customer_part_number": null,
+    "purchase_order": "B36331106-008",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "US/523/C",
+    "customer_part_number": null,
+    "purchase_order": "PO4519400777",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "US/796/I",
+    "customer_part_number": null,
+    "purchase_order": "PO4599777364",
+    "quantity": "24"
+   },
+   {
+    "supplier_part_number": "US/856/PA",
+    "customer_part_number": null,
+    "purchase_order": "PO4575267935",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "US/872/IHO",
+    "customer_part_number": null,
+    "purchase_order": "PO4561433269",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "US/81930/Z2",
+    "customer_part_number": null,
+    "purchase_order": "PO4506173301",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "US/7783/1T2Z",
+    "customer_part_number": null,
+    "purchase_order": "B33054121-001",
+    "quantity": "8620"
+   },
+   {
+    "supplier_part_number": "US/5672/6T",
+    "customer_part_number": null,
+    "purchase_order": "PO4550834023",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "US/63152/2DDT",
+    "customer_part_number": null,
+    "purchase_order": "PO4565159428",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "US/828/J",
+    "customer_part_number": null,
+    "purchase_order": "B96624486-001",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "US/6968/L5",
+    "customer_part_number": null,
+    "purchase_order": "PO4505566520",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "US/7433/5B5C",
+    "customer_part_number": null,
+    "purchase_order": "PO4520240471",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "US/5649/C3",
+    "customer_part_number": null,
+    "purchase_order": "B37066148-007",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "US/036/KJF",
+    "customer_part_number": null,
+    "purchase_order": "B59211370-007",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "US/10428/7J",
+    "customer_part_number": null,
+    "purchase_order": "B95826590-006",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "US/6260/WGPT",
+    "customer_part_number": null,
+    "purchase_order": "PO4541466243",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "US/17427/13X",
+    "customer_part_number": null,
+    "purchase_order": "B78187830-008",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "US/56091/F",
+    "customer_part_number": null,
+    "purchase_order": "PO4571544545",
+    "quantity": "3626"
+   },
+   {
+    "supplier_part_number": "US/2329/WA8",
+    "customer_part_number": null,
+    "purchase_order": "B74352992-003",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "US/6041/GJ33",
+    "customer_part_number": null,
+    "purchase_order": "B76779240-001",
+    "quantity": "2172"
+   },
+   {
+    "supplier_part_number": "US/25913/Y",
+    "customer_part_number": null,
+    "purchase_order": "B68083456-001",
+    "quantity": "3000"
+   }
+  ]
+ },
+ "dev_0096": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "LK58559635",
+   "invoice_date": null,
+   "supplier_name": "Kastitek Devices S.A. de C.V.",
+   "buyer_name": "Vexek Trading Inc",
+   "ship_to_name": "Vexek Trading Inc",
+   "currency": "JPY",
+   "total_amount": "2195406.34",
+   "awb_number": null
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "JI-38484-XF",
+    "customer_part_number": "29-3490-81",
+    "purchase_order": "PO4558934132",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "JI-6700-I21G",
+    "customer_part_number": "CP-551596",
+    "purchase_order": "B57019944-009",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "JI-5711-00FN",
+    "customer_part_number": "CP-642763",
+    "purchase_order": "B48266419-009",
+    "quantity": "5313"
+   },
+   {
+    "supplier_part_number": "JI-5805-96K",
+    "customer_part_number": "88-2344-56",
+    "purchase_order": "PO4555717765",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "JI-17623-8",
+    "customer_part_number": "79-4154-51",
+    "purchase_order": "PO4515515308",
+    "quantity": "8941"
+   },
+   {
+    "supplier_part_number": "JI-819-BCN",
+    "customer_part_number": "11-7999-19",
+    "purchase_order": "B95543968-008",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "JI-21829-AD",
+    "customer_part_number": "CP-975388",
+    "purchase_order": "PO4530900815",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "JI-84780-22",
+    "customer_part_number": "48-2139-76",
+    "purchase_order": "PO4597033974",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "JI-0294-LNS7",
+    "customer_part_number": "72-9113-75",
+    "purchase_order": "B86617458-006",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "JI-07601-K",
+    "customer_part_number": "29-2469-24",
+    "purchase_order": "B74156953-004",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "JI-727-65",
+    "customer_part_number": "CP-963244",
+    "purchase_order": "B87863841-007",
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "JI-41255-6G",
+    "customer_part_number": "CP-497783",
+    "purchase_order": "B65910091-009",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "JI-7556-X48",
+    "customer_part_number": "CP-227252",
+    "purchase_order": "PO4588173182",
+    "quantity": "2500"
+   },
+   {
+    "supplier_part_number": "JI-7610-A4",
+    "customer_part_number": "CP-958355",
+    "purchase_order": "B49267697-003",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "JI-19291-W",
+    "customer_part_number": "28-6778-37",
+    "purchase_order": "PO4541676115",
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "JI-99557-WRKS",
+    "customer_part_number": "79-7305-68",
+    "purchase_order": "PO4513284993",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "JI-62559-J",
+    "customer_part_number": "47-5094-17",
+    "purchase_order": "B98322844-004",
+    "quantity": "1000"
+   },
+   {
+    "supplier_part_number": "JI-837-UZ",
+    "customer_part_number": "CP-534814",
+    "purchase_order": "PO4518410632",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "JI-89328-J3",
+    "customer_part_number": "CP-885823",
+    "purchase_order": "PO4594383394",
+    "quantity": "419"
+   },
+   {
+    "supplier_part_number": "JI-92460-MM0",
+    "customer_part_number": "37-6655-81",
+    "purchase_order": "PO4540435026",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "JI-16697-IL",
+    "customer_part_number": "38-5688-57",
+    "purchase_order": "PO4559291104",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "JI-42850-QY",
+    "customer_part_number": "CP-671913",
+    "purchase_order": "PO4528716745",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "JI-998-R8",
+    "customer_part_number": "49-5422-97",
+    "purchase_order": "B52903013-009",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "JI-220-S85",
+    "customer_part_number": "77-9159-18",
+    "purchase_order": "B45542907-009",
+    "quantity": "5000"
+   },
+   {
+    "supplier_part_number": "JI-2725-IC8D",
+    "customer_part_number": "CP-658877",
+    "purchase_order": "PO4529137646",
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "JI-0945-P",
+    "customer_part_number": "CP-245140",
+    "purchase_order": "B54642347-004",
+    "quantity": "4197"
+   },
+   {
+    "supplier_part_number": "JI-72023-EH",
+    "customer_part_number": "CP-851326",
+    "purchase_order": "B28214526-002",
+    "quantity": "500"
+   },
+   {
+    "supplier_part_number": "JI-431-AZNM",
+    "customer_part_number": "11-2526-28",
+    "purchase_order": "B60545826-009",
+    "quantity": "3037"
+   },
+   {
+    "supplier_part_number": "JI-95118-A",
+    "customer_part_number": "54-7797-92",
+    "purchase_order": "PO4559708420",
+    "quantity": "5000"
+   }
+  ]
+ },
+ "dev_0097": {
+  "doc_type": "invoice",
+  "header": {
+   "invoice_number": "ST11177952",
+   "invoice_date": "2026-05-17",
+   "supplier_name": "Galdon Semiconductor S.r.l.",
+   "buyer_name": "Quorora Electronics Ltd",
+   "ship_to_name": "Quorora Electronics Ltd",
+   "currency": "USD",
+   "total_amount": "177799.22",
+   "awb_number": "574-73272945"
+  },
+  "line_items": [
+   {
+    "supplier_part_number": "NQL861FR",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "100"
+   },
+   {
+    "supplier_part_number": "NQL24069L",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "250"
+   },
+   {
+    "supplier_part_number": "NQL13211NW",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "3000"
+   },
+   {
+    "supplier_part_number": "NQL067092YLG",
+    "customer_part_number": null,
+    "purchase_order": null,
+    "quantity": "500"
+   }
+  ]
+ }
+}

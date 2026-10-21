@@ -1,0 +1,228 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "Document extraction submission",
+ "description": "One object keyed by doc_id. Use null for any value that is not legible on the page.",
+ "type": "object",
+ "additionalProperties": {
+  "$ref": "#/$defs/document"
+ },
+ "$defs": {
+  "document": {
+   "type": "object",
+   "required": [
+    "doc_type",
+    "header",
+    "line_items"
+   ],
+   "properties": {
+    "doc_type": {
+     "enum": [
+      "invoice",
+      "waybill"
+     ]
+    },
+    "header": {
+     "oneOf": [
+      {
+       "$ref": "#/$defs/invoice_header"
+      },
+      {
+       "$ref": "#/$defs/waybill_header"
+      }
+     ]
+    },
+    "line_items": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/line_item"
+     },
+     "description": "Every row of the item table, in any order. Empty for waybills."
+    }
+   }
+  },
+  "invoice_header": {
+   "type": "object",
+   "required": [
+    "invoice_number",
+    "invoice_date",
+    "supplier_name",
+    "buyer_name",
+    "ship_to_name",
+    "currency",
+    "total_amount",
+    "awb_number"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "invoice_number": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "invoice_date": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+     "description": "ISO date"
+    },
+    "supplier_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "buyer_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "ship_to_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "currency": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "ISO 4217 code, e.g. USD"
+    },
+    "total_amount": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "invoice total as a plain number, e.g. 1234.50"
+    },
+    "awb_number": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "air waybill number referenced on the invoice"
+    }
+   }
+  },
+  "waybill_header": {
+   "type": "object",
+   "required": [
+    "carrier",
+    "mawb",
+    "hawb",
+    "origin_airport",
+    "destination_airport",
+    "shipper_name",
+    "consignee_name",
+    "pieces",
+    "gross_weight_kg"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "carrier": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "mawb": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "hawb": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "origin_airport": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "IATA code"
+    },
+    "destination_airport": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "IATA code"
+    },
+    "shipper_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "consignee_name": {
+     "type": [
+      "string",
+      "null"
+     ]
+    },
+    "pieces": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "number of pieces"
+    },
+    "gross_weight_kg": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "gross weight in kilograms"
+    }
+   }
+  },
+  "line_item": {
+   "type": "object",
+   "required": [
+    "supplier_part_number",
+    "customer_part_number",
+    "purchase_order",
+    "quantity"
+   ],
+   "additionalProperties": false,
+   "properties": {
+    "supplier_part_number": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "the seller's / manufacturer's part number"
+    },
+    "customer_part_number": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "the buyer's own part number, if printed"
+    },
+    "purchase_order": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "PO number for this row (may be printed per row or once for the invoice)"
+    },
+    "quantity": {
+     "type": [
+      "string",
+      "null"
+     ],
+     "description": "units shipped, as a plain number"
+    }
+   }
+  }
+ }
+}

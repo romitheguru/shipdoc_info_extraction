@@ -1,0 +1,693 @@
+{
+ "all": {
+  "documents": 40,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "carrier": 1.0,
+   "consignee_name": 1.0,
+   "currency": 1.0,
+   "destination_airport": 1.0,
+   "gross_weight_kg": 1.0,
+   "hawb": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "mawb": 1.0,
+   "origin_airport": 1.0,
+   "pieces": 1.0,
+   "ship_to_name": 1.0,
+   "shipper_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 412,
+  "row_precision": 0.8713592233009708,
+  "row_recall": 0.8713592233009708,
+  "row_f1": 0.8713592233009707,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.941747572815534,
+   "customer_part_number": 0.8737864077669902,
+   "purchase_order": 0.8713592233009708,
+   "quantity": 0.941747572815534
+  },
+  "illegible_fields": 15,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.725,
+  "OVERALL": 0.8935436893203883
+ },
+ "scanned=yes": {
+  "documents": 22,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "carrier": 1.0,
+   "consignee_name": 1.0,
+   "currency": 1.0,
+   "destination_airport": 1.0,
+   "gross_weight_kg": 1.0,
+   "hawb": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "mawb": 1.0,
+   "origin_airport": 1.0,
+   "pieces": 1.0,
+   "ship_to_name": 1.0,
+   "shipper_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 229,
+  "row_precision": 0.777292576419214,
+  "row_recall": 0.777292576419214,
+  "row_f1": 0.777292576419214,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.9039301310043668,
+   "customer_part_number": 0.7816593886462883,
+   "purchase_order": 0.777292576419214,
+   "quantity": 0.9039301310043668
+  },
+  "illegible_fields": 9,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.5909090909090909,
+  "OVERALL": 0.8290988487495038
+ },
+ "scanned=no": {
+  "documents": 18,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "carrier": 1.0,
+   "consignee_name": 1.0,
+   "currency": 1.0,
+   "destination_airport": 1.0,
+   "gross_weight_kg": 1.0,
+   "hawb": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "mawb": 1.0,
+   "origin_airport": 1.0,
+   "pieces": 1.0,
+   "ship_to_name": 1.0,
+   "shipper_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 183,
+  "row_precision": 0.9890710382513661,
+  "row_recall": 0.9890710382513661,
+  "row_f1": 0.9890710382513661,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.9890710382513661,
+   "customer_part_number": 0.9890710382513661,
+   "purchase_order": 0.9890710382513661,
+   "quantity": 0.9890710382513661
+  },
+  "illegible_fields": 6,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.8888888888888888,
+  "OVERALL": 0.9734061930783243
+ },
+ "multi_page=yes": {
+  "documents": 13,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "currency": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "ship_to_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 308,
+  "row_precision": 0.8571428571428571,
+  "row_recall": 0.8571428571428571,
+  "row_f1": 0.8571428571428571,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.9512987012987013,
+   "customer_part_number": 0.8603896103896104,
+   "purchase_order": 0.8571428571428571,
+   "quantity": 0.9512987012987013
+  },
+  "illegible_fields": 5,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.38461538461538464,
+  "OVERALL": 0.8197802197802198
+ },
+ "multi_page=no": {
+  "documents": 27,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "carrier": 1.0,
+   "consignee_name": 1.0,
+   "currency": 1.0,
+   "destination_airport": 1.0,
+   "gross_weight_kg": 1.0,
+   "hawb": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "mawb": 1.0,
+   "origin_airport": 1.0,
+   "pieces": 1.0,
+   "ship_to_name": 1.0,
+   "shipper_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 104,
+  "row_precision": 0.9134615384615384,
+  "row_recall": 0.9134615384615384,
+  "row_f1": 0.9134615384615384,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.9134615384615384,
+   "customer_part_number": 0.9134615384615384,
+   "purchase_order": 0.9134615384615384,
+   "quantity": 0.9134615384615384
+  },
+  "illegible_fields": 10,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.8888888888888888,
+  "OVERALL": 0.9431623931623933
+ },
+ "repeated_parts=yes": {
+  "documents": 10,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "currency": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "ship_to_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 141,
+  "row_precision": 0.9148936170212766,
+  "row_recall": 0.9148936170212766,
+  "row_f1": 0.9148936170212766,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.9148936170212766,
+   "customer_part_number": 0.9148936170212766,
+   "purchase_order": 0.9148936170212766,
+   "quantity": 0.9148936170212766
+  },
+  "illegible_fields": 1,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.6,
+  "OVERALL": 0.8859574468085106
+ },
+ "repeated_parts=no": {
+  "documents": 30,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "carrier": 1.0,
+   "consignee_name": 1.0,
+   "currency": 1.0,
+   "destination_airport": 1.0,
+   "gross_weight_kg": 1.0,
+   "hawb": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "mawb": 1.0,
+   "origin_airport": 1.0,
+   "pieces": 1.0,
+   "ship_to_name": 1.0,
+   "shipper_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 271,
+  "row_precision": 0.8487084870848709,
+  "row_recall": 0.8487084870848709,
+  "row_f1": 0.8487084870848709,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.955719557195572,
+   "customer_part_number": 0.8523985239852399,
+   "purchase_order": 0.8487084870848709,
+   "quantity": 0.955719557195572
+  },
+  "illegible_fields": 14,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.7666666666666667,
+  "OVERALL": 0.8928167281672817
+ },
+ "illegible=yes": {
+  "documents": 6,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "currency": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "ship_to_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 49,
+  "row_precision": 0.8979591836734694,
+  "row_recall": 0.8979591836734694,
+  "row_f1": 0.8979591836734694,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.9183673469387755,
+   "customer_part_number": 0.9183673469387755,
+   "purchase_order": 0.8979591836734694,
+   "quantity": 0.9183673469387755
+  },
+  "illegible_fields": 8,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.6666666666666666,
+  "OVERALL": 0.8925170068027211
+ },
+ "illegible=no": {
+  "documents": 34,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "carrier": 1.0,
+   "consignee_name": 1.0,
+   "currency": 1.0,
+   "destination_airport": 1.0,
+   "gross_weight_kg": 1.0,
+   "hawb": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "mawb": 1.0,
+   "origin_airport": 1.0,
+   "pieces": 1.0,
+   "ship_to_name": 1.0,
+   "shipper_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 363,
+  "row_precision": 0.8677685950413223,
+  "row_recall": 0.8677685950413223,
+  "row_f1": 0.8677685950413223,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.9449035812672176,
+   "customer_part_number": 0.8677685950413223,
+   "purchase_order": 0.8677685950413223,
+   "quantity": 0.9449035812672176
+  },
+  "illegible_fields": 7,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.7352941176470589,
+  "OVERALL": 0.8941662615459408
+ },
+ "waybill=yes": {
+  "documents": 8,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "carrier": 1.0,
+   "consignee_name": 1.0,
+   "destination_airport": 1.0,
+   "gross_weight_kg": 1.0,
+   "hawb": 1.0,
+   "mawb": 1.0,
+   "origin_airport": 1.0,
+   "pieces": 1.0,
+   "shipper_name": 1.0
+  },
+  "line_item_rows": 0,
+  "row_precision": 1.0,
+  "row_recall": 1.0,
+  "row_f1": 1.0,
+  "line_item_field_accuracy": {},
+  "illegible_fields": 1,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 1.0,
+  "OVERALL": 1.0
+ },
+ "waybill=no": {
+  "documents": 32,
+  "doc_type_accuracy": 1.0,
+  "header_field_accuracy": 1.0,
+  "header_by_field": {
+   "awb_number": 1.0,
+   "buyer_name": 1.0,
+   "currency": 1.0,
+   "invoice_date": 1.0,
+   "invoice_number": 1.0,
+   "ship_to_name": 1.0,
+   "supplier_name": 1.0,
+   "total_amount": 1.0
+  },
+  "line_item_rows": 412,
+  "row_precision": 0.8713592233009708,
+  "row_recall": 0.8713592233009708,
+  "row_f1": 0.8713592233009707,
+  "line_item_field_accuracy": {
+   "supplier_part_number": 0.941747572815534,
+   "customer_part_number": 0.8737864077669902,
+   "purchase_order": 0.8713592233009708,
+   "quantity": 0.941747572815534
+  },
+  "illegible_fields": 14,
+  "false_fill_rate": 0.0,
+  "documents_fully_correct": 0.65625,
+  "OVERALL": 0.8797936893203883
+ },
+ "per_doc": {
+  "dev_0002": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0010": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 3,
+   "rows_pred": 3,
+   "rows_full": 3,
+   "false_fill": 0
+  },
+  "dev_0012": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 24,
+   "rows_pred": 24,
+   "rows_full": 21,
+   "false_fill": 0
+  },
+  "dev_0017": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 29,
+   "rows_pred": 29,
+   "rows_full": 27,
+   "false_fill": 0
+  },
+  "dev_0018": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0020": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 12,
+   "rows_pred": 12,
+   "rows_full": 12,
+   "false_fill": 0
+  },
+  "dev_0021": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0022": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 7,
+   "rows_pred": 7,
+   "rows_full": 7,
+   "false_fill": 0
+  },
+  "dev_0024": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0027": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 2,
+   "rows_pred": 2,
+   "rows_full": 2,
+   "false_fill": 0
+  },
+  "dev_0032": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 5,
+   "rows_pred": 5,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0033": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 20,
+   "rows_pred": 20,
+   "rows_full": 20,
+   "false_fill": 0
+  },
+  "dev_0034": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 16,
+   "rows_pred": 16,
+   "rows_full": 15,
+   "false_fill": 0
+  },
+  "dev_0036": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 19,
+   "rows_pred": 19,
+   "rows_full": 19,
+   "false_fill": 0
+  },
+  "dev_0037": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 30,
+   "rows_pred": 30,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0038": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 22,
+   "rows_pred": 22,
+   "rows_full": 21,
+   "false_fill": 0
+  },
+  "dev_0042": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 16,
+   "rows_pred": 16,
+   "rows_full": 16,
+   "false_fill": 0
+  },
+  "dev_0045": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 12,
+   "rows_pred": 12,
+   "rows_full": 12,
+   "false_fill": 0
+  },
+  "dev_0051": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 1,
+   "rows_pred": 1,
+   "rows_full": 1,
+   "false_fill": 0
+  },
+  "dev_0052": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0054": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 29,
+   "rows_pred": 29,
+   "rows_full": 28,
+   "false_fill": 0
+  },
+  "dev_0058": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0060": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 18,
+   "rows_pred": 18,
+   "rows_full": 18,
+   "false_fill": 0
+  },
+  "dev_0061": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 6,
+   "rows_pred": 6,
+   "rows_full": 6,
+   "false_fill": 0
+  },
+  "dev_0066": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 2,
+   "rows_pred": 2,
+   "rows_full": 2,
+   "false_fill": 0
+  },
+  "dev_0067": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 8,
+   "rows_pred": 8,
+   "rows_full": 8,
+   "false_fill": 0
+  },
+  "dev_0068": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 1,
+   "rows_pred": 1,
+   "rows_full": 1,
+   "false_fill": 0
+  },
+  "dev_0069": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 4,
+   "rows_pred": 4,
+   "rows_full": 1,
+   "false_fill": 0
+  },
+  "dev_0072": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 1,
+   "rows_pred": 1,
+   "rows_full": 1,
+   "false_fill": 0
+  },
+  "dev_0074": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 8,
+   "rows_pred": 8,
+   "rows_full": 8,
+   "false_fill": 0
+  },
+  "dev_0080": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 5,
+   "rows_pred": 5,
+   "rows_full": 5,
+   "false_fill": 0
+  },
+  "dev_0081": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 20,
+   "rows_pred": 20,
+   "rows_full": 16,
+   "false_fill": 0
+  },
+  "dev_0082": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 30,
+   "rows_pred": 30,
+   "rows_full": 30,
+   "false_fill": 0
+  },
+  "dev_0088": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0091": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 6,
+   "rows_pred": 6,
+   "rows_full": 6,
+   "false_fill": 0
+  },
+  "dev_0092": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 0,
+   "rows_pred": 0,
+   "rows_full": 0,
+   "false_fill": 0
+  },
+  "dev_0093": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 1,
+   "rows_pred": 1,
+   "rows_full": 1,
+   "false_fill": 0
+  },
+  "dev_0095": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 22,
+   "rows_pred": 22,
+   "rows_full": 21,
+   "false_fill": 0
+  },
+  "dev_0096": {
+   "exact": false,
+   "header_wrong": [],
+   "rows_gold": 29,
+   "rows_pred": 29,
+   "rows_full": 27,
+   "false_fill": 0
+  },
+  "dev_0097": {
+   "exact": true,
+   "header_wrong": [],
+   "rows_gold": 4,
+   "rows_pred": 4,
+   "rows_full": 4,
+   "false_fill": 0
+  }
+ }
+}

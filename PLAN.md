@@ -62,8 +62,8 @@ Runs locally with MLX on the M5 Pro (24 GB unified memory, shared with the OS). 
 |---|---|---|---|
 | D1 ✅ 200 docs, schema-valid | Test run on the Mac | `test_predictions.json` has 200 docs and passes the schema check | 0.25 h work + ~1 h unattended |
 | D2 ✅ README + scripts; local commits | Reproducibility: README with end-to-end commands for both backends, pinned model revisions, seeds, `uv.lock`; first commits | A fresh clone reproduces dev numbers | 0.5 h |
-| D3 | Public GitHub repo (confirm with the author before publishing) | Repo URL works | 0.1 h |
-| D4 ✅ 2 pages; repo link pending D3 | `report.pdf`, 2 pages max: approach, slice results, failure modes, new-layout handling, review-flag precision/recall, throughput, links | PDF ≤ 2 pages with all links | 1 h |
+| D3 ✅ | Public GitHub repo (confirm with the author before publishing) | Repo URL works | 0.1 h |
+| D4 ✅ 2 pages, with repo link | `report.pdf`, 2 pages max: approach, slice results, failure modes, new-layout handling, review-flag precision/recall, throughput, links | PDF ≤ 2 pages with all links | 1 h |
 
 **Remaining effort:** about 12 h of hands-on work (A ~2.75 h, B ~4 h, C ~1.75 h, D ~2 h) plus ~4–5 h of unattended model runs. Together with steps 0–2 this is well over the brief's suggested 6–8 h; A2–A3 and B5 are the first to cut if time runs short (fall back to 8B 8-bit + the PP-OCRv5 flag from note 09).
 

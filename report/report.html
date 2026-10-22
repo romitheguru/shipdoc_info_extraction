@@ -14,7 +14,7 @@ code { font: 8.2pt Menlo, monospace; }
 pre { font: 7.8pt Menlo, monospace; margin: 3px 0; background: #f7f7f7; padding: 4px; }
 </style></head><body>
 <h1>Shipping-document extraction: zero-shot VLM + second-reader review flag</h1>
-<p class="sub">Repo: <a href="(repo URL pending)">(repo URL pending)</a> · test predictions: <code>test_predictions.json</code> · notes behind every decision: <code>analysis-notes/01–12</code> · No HF model / W&amp;B run: nothing is trained.</p>
+<p class="sub">Repo: <a href="https://github.com/romitheguru/shipdoc_info_extraction">https://github.com/romitheguru/shipdoc_info_extraction</a> · test predictions: <code>test_predictions.json</code> · notes behind every decision: <code>analysis-notes/01–12</code> · No HF model / W&amp;B run: nothing is trained.</p>
 
 <h2>1. Approach and why</h2>
 <pre>pages ─► classify p1 ─► Qwen3-VL-8B (4-bit, MLX), per-type prompt, all pages in one call ─► column roles + 2 repairs ─► normalise

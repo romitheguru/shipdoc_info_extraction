@@ -1,6 +1,6 @@
 """Dev results -> report/report.html -> report.pdf (2 pages max), plus the tables for analysis-notes/12.
 
-    uv run python scripts/make_report.py --dev runs/dev.json --repo https://github.com/<user>/<repo>
+    uv run python scripts/make_report.py --dev runs/dev.json --repo https://github.com/romitheguru/shipdoc_info_extraction
 
 Fills the {{...}} slots of report/template.html: dev slice table (incl. the clean fold-4 unseen slice), review-flag
 precision/recall, throughput from the raw-output cache, failure modes (report/failures.html, written by hand after
@@ -67,7 +67,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--dev", default="runs/dev.json")
     ap.add_argument("--set", default="dev", help="gold set to score (bakeoff for a dry run before dev is done)")
-    ap.add_argument("--repo", default="(repo URL pending)")
+    ap.add_argument("--repo", default="https://github.com/romitheguru/shipdoc_info_extraction")
     ap.add_argument("--cache", nargs="+", default=glob.glob(os.path.join(ROOT, "runs/cache/mlx-Qwen3-VL-8B-Instruct-4bit-93a7dfb4")))
     a = ap.parse_args()
     pred = json.load(open(a.dev))

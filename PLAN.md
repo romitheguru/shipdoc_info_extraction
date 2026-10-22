@@ -32,38 +32,38 @@ Runs locally with MLX on the M5 Pro (24 GB unified memory, shared with the OS). 
 
 | # | Unit | Done when | Effort |
 |---|---|---|---|
-| A1 ✅ | Add timing and peak-memory logging to `bakeoff/vlm_run.py` | Re-running a few docs at 8B 8-bit gives per-doc latency and peak memory | 0.25 h |
-| A2 ✅ | Size sweep on the 40 docs, one model at a time: 8B 8-bit (existing 89.4 baseline), 8B 4-bit, 4B 8-bit; 2B on doc_type + waybills only | One table: OVERALL, false fills, part-number exact % (digital/scanned), s/doc p50/p95, peak memory | 1 h (mostly unattended) |
-| A3 ✅ | Verifier: try PaddleOCR-VL on the same pages; measure its part-number exact-read rate and the precision/recall of "disagrees with extractor" as a review flag. If it won't run in reasonable time on the Mac, keep the PP-OCRv5 flag | Verifier chosen; kept only if it beats the PP-OCRv5 flag (14/24 caught, 8.5% false flags) | 1 h |
-| A4 ✅ (8-bit provisional; B3 switched to 4-bit, note 12) | Write note 11, decide: extractor size and quantisation, whether the 2B fast path and the verifier stay | Note 11 + `PLAN.md` updated | 0.5 h |
+| A1 done | Add timing and peak-memory logging to `bakeoff/vlm_run.py` | Re-running a few docs at 8B 8-bit gives per-doc latency and peak memory | 0.25 h |
+| A2 done | Size sweep on the 40 docs, one model at a time: 8B 8-bit (existing 89.4 baseline), 8B 4-bit, 4B 8-bit; 2B on doc_type + waybills only | One table: OVERALL, false fills, part-number exact % (digital/scanned), s/doc p50/p95, peak memory | 1 h (mostly unattended) |
+| A3 done | Verifier: try PaddleOCR-VL on the same pages; measure its part-number exact-read rate and the precision/recall of "disagrees with extractor" as a review flag. If it won't run in reasonable time on the Mac, keep the PP-OCRv5 flag | Verifier chosen; kept only if it beats the PP-OCRv5 flag (14/24 caught, 8.5% false flags) | 1 h |
+| A4 done (8-bit provisional; B3 switched to 4-bit, note 12) | Write note 11, decide: extractor size and quantisation, whether the 2B fast path and the verifier stay | Note 11 + `PLAN.md` updated | 0.5 h |
 
 **Decision gate after A4:** choose the smallest extractor within ~1 OVERALL point of the best, with false fills no worse.
 
 ### Phase B: build the pipeline (`shipdoc/`)
 | # | Unit | Done when | Effort |
 |---|---|---|---|
-| B1 ✅ | Skeleton and CLI: `uv run python -m shipdoc.predict --split dev\|test --out P.json`, page grouping by doc, stdlib schema validation of the output | A stub run writes a file that passes `schema.json` and the scorer | 0.5 h |
-| B2 ✅ | Post-processing module moved from `bakeoff/postprocess.py`, with unit tests for dates (incl. ambiguous slash dates), IATA codes, numbers, verbatim IDs | Tests pass; gold header values round-trip unchanged | 0.5 h |
-| B3 ✅ v1 + 3 fixes, frozen on 8B 4-bit (note 12) | Extractor: per-type prompts and JSON schemas; invoice prompt states column roles before rows; multi-page tables | Bake-off set ≥ A3's best, both column-swap docs from note 09 fixed or explained | 1 h |
-| B4 ✅ classify call | Router (or doc_type from the extractor call, if A4 drops the 2B) | doc_type 100% on dev | 0.25 h |
-| B7 🔶 code done, not run (cut for time) | Portable backend: the same model and prompts through Hugging Face `transformers` (CUDA or CPU), selected by a `--backend mlx\|hf` flag, so graders without a Mac can reproduce | Runs 2–3 docs end to end on CPU and matches the MLX output on them | 0.5 h |
-| B5 ✂️ cut | Scan upscaling experiment: 1.5× on `.jpg` pages | Kept only if scanned row F1 improves without a latency blow-up | 0.5 h |
-| B6 ✅ PaddleOCR-VL not_in_ocr + ambiguous dates; repairs not flagged (note 12) | Review flag: verifier disagreement + ambiguous dates + uncertain column roles → `review_flags.json` | Flag precision/recall measured on dev | 0.75 h |
+| B1 done | Skeleton and CLI: `uv run python -m shipdoc.predict --split dev\|test --out P.json`, page grouping by doc, stdlib schema validation of the output | A stub run writes a file that passes `schema.json` and the scorer | 0.5 h |
+| B2 done | Post-processing module moved from `bakeoff/postprocess.py`, with unit tests for dates (incl. ambiguous slash dates), IATA codes, numbers, verbatim IDs | Tests pass; gold header values round-trip unchanged | 0.5 h |
+| B3 done: v1 + 3 fixes, frozen on 8B 4-bit (note 12) | Extractor: per-type prompts and JSON schemas; invoice prompt states column roles before rows; multi-page tables | Bake-off set ≥ A3's best, both column-swap docs from note 09 fixed or explained | 1 h |
+| B4 done: classify call | Router (or doc_type from the extractor call, if A4 drops the 2B) | doc_type 100% on dev | 0.25 h |
+| B7 code done, not run (cut for time) | Portable backend: the same model and prompts through Hugging Face `transformers` (CUDA or CPU), selected by a `--backend mlx\|hf` flag, so graders without a Mac can reproduce | Runs 2–3 docs end to end on CPU and matches the MLX output on them | 0.5 h |
+| B5 cut | Scan upscaling experiment: 1.5× on `.jpg` pages | Kept only if scanned row F1 improves without a latency blow-up | 0.5 h |
+| B6 done: PaddleOCR-VL not_in_ocr + ambiguous dates; repairs not flagged (note 12) | Review flag: verifier disagreement + ambiguous dates + uncertain column roles → `review_flags.json` | Flag precision/recall measured on dev | 0.75 h |
 
 ### Phase C: evaluate honestly
 | # | Unit | Done when | Effort |
 |---|---|---|---|
-| C1 ✅ dev run (no train run: nothing is trained, fold 4 of dev is the unseen slice) | Full dev run and all 500 docs for the folds; slice tables (scanned, multi-page, repeated parts, illegible, seen/unseen) | Numbers from `eval.evaluate` for dev, fold 4 and the 5-fold mean | 0.5 h work + ~2.5 h unattended Mac run |
-| C2 ✅ analysis only, no further fix round (frozen) | Error analysis by slice; one round of fixes that generalise (driven by errors outside fold 4 only) | Note 12 with failure modes and before/after | 1 h |
-| C3 ✅ from the run caches | Throughput on the Mac: s/doc p50/p95, docs/hour, peak memory, and what that means for the assumed volume (note 10) | A row in note 12 and the report | 0.25 h |
+| C1 done: dev run (no train run: nothing is trained, fold 4 of dev is the unseen slice) | Full dev run and all 500 docs for the folds; slice tables (scanned, multi-page, repeated parts, illegible, seen/unseen) | Numbers from `eval.evaluate` for dev, fold 4 and the 5-fold mean | 0.5 h work + ~2.5 h unattended Mac run |
+| C2 done: analysis only, no further fix round (frozen) | Error analysis by slice; one round of fixes that generalise (driven by errors outside fold 4 only) | Note 12 with failure modes and before/after | 1 h |
+| C3 done: from the run caches | Throughput on the Mac: s/doc p50/p95, docs/hour, peak memory, and what that means for the assumed volume (note 10) | A row in note 12 and the report | 0.25 h |
 
 ### Phase D: ship
 | # | Unit | Done when | Effort |
 |---|---|---|---|
-| D1 ✅ 200 docs, schema-valid | Test run on the Mac | `test_predictions.json` has 200 docs and passes the schema check | 0.25 h work + ~1 h unattended |
-| D2 ✅ README + scripts; local commits | Reproducibility: README with end-to-end commands for both backends, pinned model revisions, seeds, `uv.lock`; first commits | A fresh clone reproduces dev numbers | 0.5 h |
-| D3 ✅ | Public GitHub repo (confirmed before publishing) | Repo URL works | 0.1 h |
-| D4 ✅ 2 pages, with repo link | `report.pdf`, 2 pages max: approach, slice results, failure modes, new-layout handling, review-flag precision/recall, throughput, links | PDF ≤ 2 pages with all links | 1 h |
+| D1 done: 200 docs, schema-valid | Test run on the Mac | `test_predictions.json` has 200 docs and passes the schema check | 0.25 h work + ~1 h unattended |
+| D2 done: README + scripts; local commits | Reproducibility: README with end-to-end commands for both backends, pinned model revisions, seeds, `uv.lock`; first commits | A fresh clone reproduces dev numbers | 0.5 h |
+| D3 done | Public GitHub repo (confirmed before publishing) | Repo URL works | 0.1 h |
+| D4 done: 2 pages, with repo link | `report.pdf`, 2 pages max: approach, slice results, failure modes, new-layout handling, review-flag precision/recall, throughput, links | PDF ≤ 2 pages with all links | 1 h |
 
 **Remaining effort:** about 12 h of hands-on work (A ~2.75 h, B ~4 h, C ~1.75 h, D ~2 h) plus ~4–5 h of unattended model runs. Together with steps 0–2 this is well over the brief's suggested 6–8 h; A2–A3 and B5 are the first to cut if time runs short (fall back to 8B 8-bit + the PP-OCRv5 flag from note 09).
 

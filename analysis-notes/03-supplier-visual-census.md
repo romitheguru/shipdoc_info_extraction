@@ -64,5 +64,5 @@ Summary counts:
 3. **Date policy for unseen layouts:**
    - A month name, `DD-MON` or ISO date is unambiguous.
    - A slash date with a component above 12 settles the order.
-   - Otherwise it's ambiguous; see note 07 for why we should guess plus flag, not null.
+   - Otherwise it's ambiguous; see note 07 for why I guess plus flag rather than output null.
 4. **Multi-page:** pass all pages together (one context) so page-2 rows inherit page-1 column semantics. Totals come from the last page.

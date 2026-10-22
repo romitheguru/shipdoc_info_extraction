@@ -7,7 +7,7 @@ Set: the bake-off set from note 08, which is 40 dev docs covering all 18 supplie
 ## Candidates actually run
 - **OCR: PP-OCRv5 server** (PaddleOCR 3.4, CPU). I measured how often each gold value appears verbatim among its tokens. This is an **upper bound** for candidates A and C: a value OCR never produces can't be extracted, however good the mapping.
 - **B: Qwen3-VL-8B-Instruct, 8-bit MLX, zero-shot.** All pages of a document go in one call, with the generic prompt in `bakeoff/vlm_run.py` (no supplier names). Its output goes through deterministic post-processing (dates, numbers, IATA codes) and is then scored by the harness.
-- **Not run: PaddleOCR-VL (candidate A as specified).** Its reading accuracy belongs to the same OCR family; it is untested here and can be checked on the GPU later if wanted.
+- **Not run: PaddleOCR-VL (candidate A as specified).** Its reading accuracy belongs to the same OCR family; it is untested here and can be checked later (note 11 does this).
 
 ## Headline
 | | digital | scanned |
@@ -42,13 +42,13 @@ Set: the bake-off set from note 08, which is 40 dev docs covering all 18 supplie
 ## Runtime (Mac, 8-bit)
 - Median 18 s per doc; ~30-row multi-page docs take 50–85 s.
 - Two docs took 34–53 min. They produced the same output length as an 85 s doc, so this was environmental (the OCR job was competing for CPU and memory), not runaway generation.
-- Needs re-timing on the GPU before projecting the test run.
+- Needs re-timing without the parallel OCR job before projecting the test run (note 11 does this).
 
 ## What to do next (step 3)
 1. **Make the column decision explicit.** Have the model first output the table's column headers with a role for each (`supplier_pn | customer_pn | po | qty | other`), then the rows. This makes the column decision visible and checkable, and lets a header-role sanity check catch swaps.
 2. **Give the model more pixels per character on scans.** Try 1.5× upscaling (glyphs are ~11 px; at 32 px per token the model gets about 3 glyph heights per token). Measure on the scanned slice.
 3. **Review flag:** VLM-OCR disagreement on IDs, plus an ambiguous-date flag from post-processing, plus a check for columns whose meaning is uncertain.
-4. **Confirm on the folds and on bf16 on the GPU.** The 8-bit Mac numbers are an estimate of the submitted model.
+4. **Confirm on the folds and across model sizes and quantisations** (note 11).
 
 ## Caveats
 - n = 40, so ±1 doc is ±2.5 points on "docs exact".

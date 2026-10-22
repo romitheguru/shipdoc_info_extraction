@@ -1,13 +1,13 @@
 # 10: Serving architecture and model sizing
 
-The bake-off (note 09) chose a zero-shot VLM, but it ran one document at a time on a Mac. This note sets the design targets for a real deployment and the shortlist for a second, GPU-based bake-off. Numbers marked *est.* are back-of-envelope estimates to be replaced by measurements in step 2b.
+The bake-off (note 09) chose a zero-shot VLM, but it ran one document at a time on a Mac. This note sets the design targets for a real deployment and the shortlist for a model size sweep. Numbers marked *est.* are back-of-envelope estimates to be replaced by measurements in step 2b.
 
 ## Assumptions (the brief gives no volume or latency target)
 | | Assumption | Why it matters |
 |---|---|---|
 | Volume | 10k docs/day, 5× peaks → ~0.6 docs/s at peak | Throughput, not single-request latency, sets the hardware cost |
 | Latency | Seconds per doc, not minutes | Back-office pipeline, not interactive |
-| Hardware | One 24 GB GPU (brief), **weights ≤ ~12 GB** (our rule) | The other half holds KV cache, so many docs run concurrently. A model that only *fits* 24 GB serves one doc at a time |
+| Hardware | One 24 GB GPU (brief), **weights ≤ ~12 GB** (my rule) | The other half holds KV cache, so many docs run concurrently. A model that only *fits* 24 GB serves one doc at a time |
 
 ## Memory budget (*est.*)
 | Model | Weights |
@@ -36,11 +36,11 @@ The bake-off (note 09) chose a zero-shot VLM, but it ran one document at a time 
 | Router / waybill fast path | Qwen3-VL-2B |
 | Verifier (parser) | PaddleOCR-VL; dots.ocr as a fallback if PaddleOCR-VL won't serve |
 
-## Update: no rented GPU
-The author decided against renting a GPU; the data is small and everything runs on a MacBook Pro (M5 Pro, 24 GB unified memory) with MLX. The consequences:
+## Update: everything runs locally
+All processing, experiments and runs were done locally on my MacBook Pro (M5 Pro, 24 GB unified memory) with MLX; the data is small enough for that. The consequences:
 - **The size sweep runs on MLX quantisations** (8-bit and 4-bit) instead of FP8/AWQ, one model at a time.
 - **vLLM (decision 1) becomes a production recommendation** in the report, not something measured. Throughput is reported as measured on the Mac.
 - **A `transformers` backend is kept** so graders on NVIDIA or CPU can reproduce.
 - **The ≤ ~12 GB weight budget still applies**, now because the OS and other apps share the 24 GB.
 
-Leaderboard results for document parsers (e.g. OmniDocBench) measure parsing, not field extraction, so only our own bake-off decides. The main risk to watch is that 4-bit quantisation increases O/0 and I/1 swaps on scans.
+Leaderboard results for document parsers (e.g. OmniDocBench) measure parsing, not field extraction, so only my own bake-off decides. The main risk to watch is that 4-bit quantisation increases O/0 and I/1 swaps on scans.

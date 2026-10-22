@@ -4,7 +4,7 @@ Script: `analysis-notes/scripts/01_supplier_layout.py` (reads labels only). The 
 
 ## TL;DR
 - **Invoices come from 18 suppliers.** Each one has a fixed layout and a fixed part-number prefix. **Waybills all share one template** with shuffled boxes, so "supplier" for a waybill really means the carrier brand (10 brands). The ~20 suppliers in the brief = 18 invoice suppliers + the waybill template(s).
-- **Dev holds no unseen suppliers.** Every dev group appears in train. Dev OVERALL will therefore overstate test performance, since about half of test is unseen. **We need leave-supplier-out evaluation** to estimate it.
+- **Dev holds no unseen suppliers.** Every dev group appears in train. Dev OVERALL will therefore overstate test performance, since about half of test is unseen. **I need leave-supplier-out evaluation** to estimate it.
 - **Most nulls are "not printed", not "illegible".** The commonest null header field is `awb_number` (35% of invoices), and the AWB line is simply absent from the page in those cases. True illegibility (a black bar or scribble) hits `invoice_number`, `invoice_date` and some `awb_number` values (≥ 48 train+dev docs). *Corrected in note 05.* Row cells are never illegible.
 - **Date formats differ by supplier, and DD/MM vs MM/DD is ambiguous.** On an unseen layout, a date like `03/04/2026` cannot be resolved from the page alone. This is a false-fill risk.
 

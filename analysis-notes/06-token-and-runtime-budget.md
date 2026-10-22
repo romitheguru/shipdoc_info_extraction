@@ -49,5 +49,5 @@ Docs have 1 page (348), 2 pages (133) or 3 pages (19). The test set is 280 pages
 ## Implications
 1. **Default to native resolution with the whole document in one context.** It fits, and the column semantics carry across pages (note 03).
 2. **Use the compact output format** if decode time becomes the bottleneck. Measure the accuracy impact in 09.
-3. **Model-size ceiling:** 7–8B VLMs in bf16 are the largest that run comfortably in 24 GB at this context size. Larger models (30B+) would need 4-bit quantisation, which hurts exact character copying. Note 08's OCR check tells us whether a smaller pipeline is viable instead.
-4. **Training compute is the open question.** Fine-tuning needs a cloud GPU decision before we commit. Zero-shot (note 09) decides whether it's needed at all.
+3. **Model-size ceiling:** 7–8B VLMs in bf16 are the largest that run comfortably in 24 GB at this context size. Larger models (30B+) would need 4-bit quantisation, which hurts exact character copying. Note 08's OCR check shows whether a smaller pipeline is viable instead.
+4. **Training compute is the open question.** Fine-tuning at native resolution doesn't fit the local 24 GB machine without QLoRA. Zero-shot (note 09) decides whether it's needed at all.

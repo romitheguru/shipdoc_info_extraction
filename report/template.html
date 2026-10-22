@@ -21,9 +21,9 @@ pre { font: 7.8pt Menlo, monospace; margin: 3px 0; background: #f7f7f7; padding:
                                            PaddleOCR-VL reads each page ─► "value not on the page" ─► review flags</pre>
 <ul>
 <li><b>Zero-shot VLM, not OCR + rules.</b> In a 40-doc bake-off covering all 18 suppliers (note 09), Qwen3-VL-8B read supplier part numbers exactly 98.9% (digital) / 92.3% (scanned) of the time, above the <i>ceiling</i> of PP-OCRv5 (95.1 / 86.0: a value OCR never emits can't be extracted). It got 100% of header fields and 0 of 15 false fills on illegible fields with no rules at all.</li>
-<li><b>No fine-tuning.</b> Train has 18 suppliers whose ~40-part catalogues are reused in 99% of dev rows (note 02), so a tuned model would learn to recall catalogues, which is exactly what fails on unseen suppliers. It would also cost a GPU we chose not to rent.</li>
+<li><b>No fine-tuning.</b> Train has 18 suppliers whose ~40-part catalogues are reused in 99% of dev rows (note 02), so a tuned model would learn to recall catalogues, which is exactly what fails on unseen suppliers.</li>
 <li><b>Field meaning from the model, formats from code.</b> The invoice prompt asks the model to name each column's <i>role</i> from the seller's point of view ("Your/Customer" = buyer) before it fills rows. This targets the costliest error (one swapped column zeroes every row). Code then does dates (ISO, ambiguous day/month flagged), numbers (incl. European <code>1.234,50</code>), currency and IATA codes. No rule mentions a supplier, prefix or layout position.</li>
-<li><b>Sized for 24 GB.</b> Size sweep (note 11): 2B 55.5 OVERALL with false fills, 4B 84.0, 8B 4-bit 90.5, 8B 8-bit 89.4 (40-doc bake-off). With the final prompt, <b>8B 4-bit</b> scored 91.0 vs 90.3 for 8-bit, with 0 vs 1 false fill, at 19 vs 31 s/doc and a 7.5 vs 11.9 GB peak. We kept 4-bit, which leaves about two-thirds of the 24 GB free. The quantisation risk is real but not decisive: both widths read <code>PO</code> as <code>P0</code> on one invoice.</li>
+<li><b>Sized for 24 GB.</b> Size sweep (note 11): 2B 55.5 OVERALL with false fills, 4B 84.0, 8B 4-bit 90.5, 8B 8-bit 89.4 (40-doc bake-off). With the final prompt, <b>8B 4-bit</b> scored 91.0 vs 90.3 for 8-bit, with 0 vs 1 false fill, at 19 vs 31 s/doc and a 7.5 vs 11.9 GB peak. I kept 4-bit, which leaves about two-thirds of the 24 GB free. The quantisation risk is real but not decisive: both widths read <code>PO</code> as <code>P0</code> on one invoice.</li>
 <li><b>Null only when obscured.</b> Null on a readable field scores like a wrong value (note 07), so readable-but-uncertain values are kept and <i>flagged</i>; only absent, blacked-out or scribbled values are null.</li>
 </ul>
 
@@ -46,7 +46,7 @@ pre { font: 7.8pt Menlo, monospace; margin: 3px 0; background: #f7f7f7; padding:
 <h2>6. Limits and honesty</h2>
 <ul>
 <li>I looked at all 18 train suppliers while analysing the data, and the column-role prompt and its three fixes were written after reading bake-off errors (fold-4 docs excluded). Dev numbers are therefore optimistic. The fold-4 row is the cleanest unseen estimate, but it has only {{F4N}} docs.</li>
-<li>Throughput on the Mac: {{THROUGHPUT}}. The transformers backend (<code>--backend hf</code>) for graders without a Mac is implemented but was not run.</li>
+<li>All processing, experiments and runs were done locally on a MacBook Pro (M5 Pro, 24 GB unified memory) with MLX. Throughput: {{THROUGHPUT}}. The transformers backend (<code>--backend hf</code>) for graders without a Mac is implemented but was not run.</li>
 <li>Two test invoices (30 rows each) hit the 4,096-token output limit, and one came out empty. The limit was raised to 8,192 and only those two were re-run. No dev doc reached the old limit, so the dev numbers are unaffected.</li>
 <li>Cut for time: a faster prompt (v2, compact output) that turned out slower and was not used; scan upscaling; a second OCR tier for high-precision flags.</li>
 </ul>

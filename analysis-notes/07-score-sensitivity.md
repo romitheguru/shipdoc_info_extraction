@@ -22,7 +22,7 @@ Script: `analysis-notes/scripts/07_score_sensitivity.py`. It takes the 500 train
 | ambiguous dates set to null (abstain) | 95.67 | −4.3 | 97.9 | 100 | 82.6 |
 | ambiguous dates all read the wrong way (DD/MM ↔ MM/DD) | 95.97 | −4.0 | 98.0 | 100 | 83.8 |
 
-## What this tells us
+## What this shows
 1. **Row exactness dominates.** One wrong character in one row of each invoice costs 19 points, more than wiping out every date or every null. Row F1 barely moves, but the "fully correct" term collapses: docs exact falls from 100% to 20%, because only the waybills survive. Ambiguous dates swapped give the same reading as the original when day equals month, which is why abstaining costs slightly more than guessing wrong. **Part-number character accuracy is the number to optimise and measure.**
 2. **Column-semantics errors are the costliest structural mistake.** Filling a PO where there's no PO column, or swapping customer PN and PO, invalidates *every* row of the affected docs (−17 to −23). Note 03 shows these are exactly the cases unseen layouts will stress.
 3. **Nulling a legible value scores the same as a wrong value.** Abstaining on ambiguous dates (−4.3) is *slightly worse* than guessing wrong every time (−4.0), and a 50/50 guess would cost only about −2. **For fields whose gold is not null, null never helps the score.** Use null only for "illegible or absent". For uncertainty, give the best guess and **raise a review flag**, which is the uncertainty signal the brief rewards.

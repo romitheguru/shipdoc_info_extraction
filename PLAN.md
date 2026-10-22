@@ -62,7 +62,7 @@ Runs locally with MLX on the M5 Pro (24 GB unified memory, shared with the OS). 
 |---|---|---|---|
 | D1 ✅ 200 docs, schema-valid | Test run on the Mac | `test_predictions.json` has 200 docs and passes the schema check | 0.25 h work + ~1 h unattended |
 | D2 ✅ README + scripts; local commits | Reproducibility: README with end-to-end commands for both backends, pinned model revisions, seeds, `uv.lock`; first commits | A fresh clone reproduces dev numbers | 0.5 h |
-| D3 ✅ | Public GitHub repo (confirm with the author before publishing) | Repo URL works | 0.1 h |
+| D3 ✅ | Public GitHub repo (confirmed before publishing) | Repo URL works | 0.1 h |
 | D4 ✅ 2 pages, with repo link | `report.pdf`, 2 pages max: approach, slice results, failure modes, new-layout handling, review-flag precision/recall, throughput, links | PDF ≤ 2 pages with all links | 1 h |
 
 **Remaining effort:** about 12 h of hands-on work (A ~2.75 h, B ~4 h, C ~1.75 h, D ~2 h) plus ~4–5 h of unattended model runs. Together with steps 0–2 this is well over the brief's suggested 6–8 h; A2–A3 and B5 are the first to cut if time runs short (fall back to 8B 8-bit + the PP-OCRv5 flag from note 09).
@@ -71,11 +71,11 @@ Runs locally with MLX on the M5 Pro (24 GB unified memory, shared with the OS). 
 After B3 the configuration was frozen to fit the time budget: 8B 4-bit, prompt v1 + fixes. B5, the B7 check, per-fold re-runs and the PP-OCRv5 second tier were cut; the prompt v2 experiment was stopped (slower). Details in note 12.
 
 ## Compute
-- Everything runs on the author's MacBook Pro (M5 Pro, 24 GB unified memory) with MLX. No rented GPU.
+- All processing, experiments and runs were done locally on my MacBook Pro (M5 Pro, 24 GB unified memory) with MLX.
 - The memory is shared with the OS and other apps: one model job at a time, weights ≤ ~12 GB, heavy apps closed during long runs. (In note 09, running OCR and the VLM together caused 34–53 min outliers.)
 - Graders without a Mac use the `transformers` backend (B7) on a 24 GB GPU or CPU. The report states that official numbers come from MLX.
 - The vLLM batching design in note 10 is a production recommendation, reported as untested.
 - No paid APIs at inference.
 
 ## Known caveat for the report
-The author looked at all 18 train suppliers while writing notes 01–07. "Held-out" therefore means no learned parameters, few-shot examples or thresholds come from the held-out suppliers; it cannot undo human familiarity. To mitigate this, no rule may reference a supplier name, prefix or layout position, and fold 4 is kept clean of prompt iteration.
+I looked at all 18 train suppliers while writing notes 01–07. "Held-out" therefore means no learned parameters, few-shot examples or thresholds come from the held-out suppliers; it cannot undo human familiarity. To mitigate this, no rule may reference a supplier name, prefix or layout position, and fold 4 is kept clean of prompt iteration.

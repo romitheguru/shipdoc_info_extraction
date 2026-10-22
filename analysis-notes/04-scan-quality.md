@@ -24,4 +24,4 @@ Script: `analysis-notes/scripts/04_scan_quality.py` covers all 951 pages, includ
 ## Implications
 1. **Resolution matters more than denoising.** The glyphs are about 11 px tall. At Qwen2.5-VL's native page size (one token per 28×28 px), each token covers about 2.5 glyph heights; see note 06 for the budget trade-off.
 2. **Scan errors will be character-level** (O/0, I/1, 5/S, 8/B in part numbers), not missing text. Note 07 shows one such error per invoice costs about 19 OVERALL points, so the scanned slice is where row F1 will drop.
-3. **Simple augmentation is enough if we fine-tune:** ±2° rotation, JPEG quality 45–75, Gaussian blur and gray paper. That covers the test distribution.
+3. **Simple augmentation is enough if I fine-tune:** ±2° rotation, JPEG quality 45–75, Gaussian blur and gray paper. That covers the test distribution.

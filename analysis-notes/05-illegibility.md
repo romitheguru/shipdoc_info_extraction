@@ -32,6 +32,6 @@ Montages of every illegible case in train+dev were made with `analysis-notes/scr
    - Label absent → null.
    - Label present with a bar or scribble → null, **even if some characters show through and even if the value appears elsewhere.**
    - Label present and legible → read it.
-2. **Training data must include these cases.** If we fine-tune, the ~48 illegible examples (plus the AWB-absent ones) teach the null behaviour. Zero-shot prompts must spell out the rule, especially "don't use the page-2 banner".
+2. **Training data must include these cases.** If I fine-tune, the ~48 illegible examples (plus the AWB-absent ones) teach the null behaviour. Zero-shot prompts must spell out the rule, especially "don't use the page-2 banner".
 3. **Synthetic illegibility is cheap and worth doing.** Drawing bars and scribbles over legible header values in train images multiplies the 48 examples. It could also add smudge, fade and cut-off variants to hedge against test containing styles that train doesn't.
 4. **A review flag can be targeted.** Visible ink over a field (a bar or scribble detector) is a strong, cheap signal for the optional "needs review" flag and for checking the model's own nulls.

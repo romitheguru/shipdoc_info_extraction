@@ -46,7 +46,7 @@ OVERALL = 0.4*header_field_acc + 0.4*line_item_row_F1 + 0.2*docs_fully_correct
   - **numbers:** compared numerically, with commas ignored.
   - **dates:** must be exact ISO.
   - **currency and airport codes:** case is ignored.
-- `--meta` takes a JSON list of `{doc_id, <tag>: bool}` and reports each slice. Slices are built by us: scanned, multi_page, repeated_parts, illegible, seen/unseen supplier.
+- `--meta` takes a JSON list of `{doc_id, <tag>: bool}` and reports each slice. The slices are not provided, so I built them: scanned, multi_page, repeated_parts, illegible, seen/unseen supplier.
 - The graders focus on **unseen suppliers** and the **false-fill rate**: "90% right and knows its 10% beats 93% right and can't tell."
 
 ## Constraints

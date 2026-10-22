@@ -16,5 +16,5 @@ def documents(split, root=ROOT):
 
 
 def is_scan(path):
-    """A .jpg page is a scan (CLAUDE.md, note 04)."""
+    """A .jpg page is a scan (note 04)."""
     return path.lower().endswith((".jpg", ".jpeg"))
